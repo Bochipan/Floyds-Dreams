@@ -1,0 +1,2001 @@
+fileFormatVersion: 2
+guid: c6e7707f46bf09d45b954f7f7e3b6dbb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafc8e81162d19a459ade75518888102
+      internalID: -2004091833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03814048a0580545a5b01a458e0a037
+      internalID: -1576269245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe15d5c8c9f1584fb7fec3432a81dc8
+      internalID: 91539993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fed88a284abe9d4893d9f877fe41264
+      internalID: -1792788178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b41bbd0211d334e8b4ab7314ec82e7
+      internalID: -1890984503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a2722ad67febc44934a7df8ae3e7be
+      internalID: -974427032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc6a1d107b7aa346806c7e4856c8303
+      internalID: 1463498108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4ab07643d0f774fbc9983e64e9b02c
+      internalID: 1614340652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe0104834c36d345bf3a9b96128acbc
+      internalID: 270656365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 406.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9a3fde06182c94599257c915516e0d
+      internalID: 298144801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979b2c0d415d2d74594d1d9d13cf8d3b
+      internalID: -529223943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d76dcb326c210499a9fe4b365bd65d
+      internalID: -565356858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23f6e9754c8ede4d9c89ba677529d71
+      internalID: 964356740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939954c853ed2bc4db621d3e6ddcd068
+      internalID: -857685857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1071ce1f551c67439ce7248f2998b72
+      internalID: -1217830863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef40491d86afb194ca4cb5f8d6920060
+      internalID: 376515775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_16
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c112bcda9fd8c4dbace3b7989c265a
+      internalID: 1311636463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_17
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 361.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939045b95df37b041a9a00c31850ee31
+      internalID: -1850552036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7545b3e38826189408c25099c20b651b
+      internalID: -1195211785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f587974a08457934a9a3ce085eb3cb8b
+      internalID: -1484539988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57df7cdd78a56f042a85fd066f87fcb4
+      internalID: 1727521498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204f7632dbd8d7b48ba1abaac7ab7f0b
+      internalID: -1050085477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8731714e8d83fd4b8c042fd9f51017b
+      internalID: 291687374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f95797ee3a2244ba7f23f965ac9756
+      internalID: 1683163382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548f7cff5710c9649b361dc6aed00e59
+      internalID: -724014125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_25
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 316.8
+        width: 26.2
+        height: 45.2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974479fdcb638094689eeba913e53b22
+      internalID: 1048829910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f0d59127a0bd84c96ef1d9144f6bf0
+      internalID: 1057038570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79db7c4507ca21e48b0b95f1c344018a
+      internalID: -463010105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_28
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fe7d3570aa47e41a920a3389e16be7
+      internalID: 452929999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_29
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6015b6542d8646c40b36bc0d6987e781
+      internalID: 1307818554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8935076be7cc79f47b41db145ab7da4e
+      internalID: 50768960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809032c92bd11bb46ab39050a5a2ded6
+      internalID: 577335934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_32
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e577d08b110aede4a9a37e5ea1d81090
+      internalID: -1362234969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_33
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 269
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1805a2a0d5eea14bab30e7ceb98ac9d
+      internalID: 1475002850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f76a92821eefb4e9e01764f325ad80
+      internalID: 862394394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_35
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dad836137c6bf41b2876da7a522b42
+      internalID: -227008688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_36
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841b87b5a18d0eb4dace4586bcf9a940
+      internalID: -1618683600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bab2993b5f54a4392af31d47ec14ae
+      internalID: 1042788895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_38
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b1ec53dc7a80d4190481099f3f2b16
+      internalID: 2036511727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_39
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389cae4886e8cdd469a62eccee8eda80
+      internalID: 1798593151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9de2a7acf66ac479c4b61b79e676ea
+      internalID: 19177311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_41
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 223
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892d1874a3fc413449a5a50f84f17c14
+      internalID: -1935819266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e82d334fb75a841976c71360c0f147
+      internalID: -128724060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_43
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c0d0b6177da7e4fa33a0ddc0ff4d1e
+      internalID: 1898329220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_44
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0968973d85e4124fbe168e8350dda12
+      internalID: -1583853527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831c44a4ea2aaf44cbd7d9e728743421
+      internalID: 549833688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_46
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908ca6bc740c8794ab32b4fe9db9faca
+      internalID: -1770625751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_47
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426fa4ea13264c940a11196e3cd5f6b5
+      internalID: -1599486258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5130c66188edb9b4e9e8e76595035c50
+      internalID: 2023300678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 176
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5976d19f8bd104cbe8d85fa22fb5d6
+      internalID: -1256054305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033e1fb584babf44ab53b83395cecdf4
+      internalID: 697883811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_51
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237fefa3e4c669a4aa1662d26fb50008
+      internalID: -339034064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_52
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77d4668650f8af4a83acb372a4e8407
+      internalID: 1628644977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_53
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8ad32dc989af143b4a10d8cd582269
+      internalID: 11824607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_54
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f79374c7084a24493c5ae367d8ee3d
+      internalID: -463957854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_55
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c080beb6a653d934ab55f2c940d881e0
+      internalID: -1688302096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_56
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ce941f3f438dc4c9bfb7cba22952e6
+      internalID: -1653063191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_57
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 134
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bbc87e0bf199844bcff99921687fce
+      internalID: -1311960084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55885c09cfc07554cbe35b2be36fd99d
+      internalID: -1204343473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc1305fac18d834fba389f388e4e4f4
+      internalID: 1597030628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_60
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f73af850dc85cf439a9a317de152de3
+      internalID: -520402107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_61
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2e3b14b63e87f4fa5b190b4bb11d7c
+      internalID: -114236600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_62
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51b94fd7cfac094092b19fcde3c42e4
+      internalID: 1422787360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_63
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c50a3b0d0b9324eadf33ea63b10c01
+      internalID: 898062515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_64
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e113464a59ade14cb560e11ebc28950
+      internalID: -143658291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_65
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 89
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf2f2a2e04ca2e459ec09276e6223e6
+      internalID: 152344437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580276b6db50f9a46841390bd05ac80d
+      internalID: 547125967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_67
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be7380d6f881ae43838d9a6b82b01e9
+      internalID: -241824926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_68
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c51fb11fd1ddbc41b60f28ea8513365
+      internalID: 1408199416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_69
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdf9d2ad85c03743b60d96b31c34acb
+      internalID: 1004801295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_70
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc146eb24bf0584f85703108843e911
+      internalID: -1070041025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_71
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bf164bff15ffd4aa3a2cdcdf25a5aa
+      internalID: 1216972787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_72
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a45b377be0f4e546971fd86b7830333
+      internalID: 471859701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_73
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 45
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87594faf4398bb4eb05c6bcd82b529c
+      internalID: -1092403592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226b22c19d29ef0478ab92af1de5a3e1
+      internalID: -846087727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d7282f48f041f43a84538cba7873a1
+      internalID: 1677926679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_76
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8360c2234dece45a4a536601435682
+      internalID: -517523220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_77
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b644e0e18e049c479c8bc62df3808b5
+      internalID: 1453675482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_78
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e532179475d0c4792a937713c48d32
+      internalID: -123754830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_79
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8b10ac1d6fb924d99da5ccf1c52af6
+      internalID: -591627443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_80
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13789d12467be364f8799b5076d4c430
+      internalID: -1675247835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_81
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b7bc304157ab448956b4c865d08bb6
+      internalID: 1854820525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_82
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822cfcf1460bf714f8ef1fe6dd7fc8d7
+      internalID: 1684431370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet FINAL_83
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfc3e3e492e9514782aee5bea39f519
+      internalID: -1984690840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spritesheet FINAL_0: -2004091833
+      spritesheet FINAL_1: -1576269245
+      spritesheet FINAL_10: -529223943
+      spritesheet FINAL_11: -565356858
+      spritesheet FINAL_12: 964356740
+      spritesheet FINAL_13: -857685857
+      spritesheet FINAL_14: -1217830863
+      spritesheet FINAL_15: 376515775
+      spritesheet FINAL_16: 1311636463
+      spritesheet FINAL_17: -1850552036
+      spritesheet FINAL_18: -1195211785
+      spritesheet FINAL_19: -1484539988
+      spritesheet FINAL_2: 91539993
+      spritesheet FINAL_20: 1727521498
+      spritesheet FINAL_21: -1050085477
+      spritesheet FINAL_22: 291687374
+      spritesheet FINAL_23: 1683163382
+      spritesheet FINAL_24: -724014125
+      spritesheet FINAL_25: 1048829910
+      spritesheet FINAL_26: 1057038570
+      spritesheet FINAL_27: -463010105
+      spritesheet FINAL_28: 452929999
+      spritesheet FINAL_29: 1307818554
+      spritesheet FINAL_3: -1792788178
+      spritesheet FINAL_30: 50768960
+      spritesheet FINAL_31: 577335934
+      spritesheet FINAL_32: -1362234969
+      spritesheet FINAL_33: 1475002850
+      spritesheet FINAL_34: 862394394
+      spritesheet FINAL_35: -227008688
+      spritesheet FINAL_36: -1618683600
+      spritesheet FINAL_37: 1042788895
+      spritesheet FINAL_38: 2036511727
+      spritesheet FINAL_39: 1798593151
+      spritesheet FINAL_4: -1890984503
+      spritesheet FINAL_40: 19177311
+      spritesheet FINAL_41: -1935819266
+      spritesheet FINAL_42: -128724060
+      spritesheet FINAL_43: 1898329220
+      spritesheet FINAL_44: -1583853527
+      spritesheet FINAL_45: 549833688
+      spritesheet FINAL_46: -1770625751
+      spritesheet FINAL_47: -1599486258
+      spritesheet FINAL_48: 2023300678
+      spritesheet FINAL_49: -1256054305
+      spritesheet FINAL_5: -974427032
+      spritesheet FINAL_50: 697883811
+      spritesheet FINAL_51: -339034064
+      spritesheet FINAL_52: 1628644977
+      spritesheet FINAL_53: 11824607
+      spritesheet FINAL_54: -463957854
+      spritesheet FINAL_55: -1688302096
+      spritesheet FINAL_56: -1653063191
+      spritesheet FINAL_57: -1311960084
+      spritesheet FINAL_58: -1204343473
+      spritesheet FINAL_59: 1597030628
+      spritesheet FINAL_6: 1463498108
+      spritesheet FINAL_60: -520402107
+      spritesheet FINAL_61: -114236600
+      spritesheet FINAL_62: 1422787360
+      spritesheet FINAL_63: 898062515
+      spritesheet FINAL_64: -143658291
+      spritesheet FINAL_65: 152344437
+      spritesheet FINAL_66: 547125967
+      spritesheet FINAL_67: -241824926
+      spritesheet FINAL_68: 1408199416
+      spritesheet FINAL_69: 1004801295
+      spritesheet FINAL_7: 1614340652
+      spritesheet FINAL_70: -1070041025
+      spritesheet FINAL_71: 1216972787
+      spritesheet FINAL_72: 471859701
+      spritesheet FINAL_73: -1092403592
+      spritesheet FINAL_74: -846087727
+      spritesheet FINAL_75: 1677926679
+      spritesheet FINAL_76: -517523220
+      spritesheet FINAL_77: 1453675482
+      spritesheet FINAL_78: -123754830
+      spritesheet FINAL_79: -591627443
+      spritesheet FINAL_8: 270656365
+      spritesheet FINAL_80: -1675247835
+      spritesheet FINAL_81: 1854820525
+      spritesheet FINAL_82: 1684431370
+      spritesheet FINAL_83: -1984690840
+      spritesheet FINAL_9: 298144801
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
