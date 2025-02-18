@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38567
+  controlID: 242
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 38568
+  controlID: 243
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38569
+  controlID: 244
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 02590000
       m_LastClickedID: 0
-      m_ExpandedIDs: f62afeffc4c8ffff64f8ffff
+      m_ExpandedIDs: 28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -281,8 +281,8 @@ MonoBehaviour:
     y: 0
     width: 992
     height: 471
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -312,7 +312,7 @@ MonoBehaviour:
     x: 428
     y: 73
     width: 990
-    height: 442
+    height: 450
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -671,9 +671,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.25770602, y: 0.04539555, z: -2.6927335}
+    m_Target: {x: 0.8743821, y: 0.0015645325, z: -2.834958}
     speed: 2
-    m_Value: {x: -0.25770602, y: 0.04539555, z: -2.6927335}
+    m_Value: {x: 0.8743821, y: 0.0015645325, z: -2.834958}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -723,9 +723,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.069403
+    m_Target: 5.476923
     speed: 2
-    m_Value: 5.069403
+    m_Value: 5.476923
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -919,7 +919,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -39242
+  m_LastSelectedObjectID: 22786
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -965,7 +965,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/room/Materials
+    - Assets/Scenes/SampleScene
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/room/Materials
+  - Assets/Scenes/SampleScene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Usuario\Documents\GitHub\Floyds-Dreams\game\Floyd's
     Dreams
@@ -981,9 +981,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 545f0000
-    m_LastClickedID: 24404
-    m_ExpandedIDs: 00000000685800006e5a0000c05e000000ca9a3bffffff7f
+    m_SelectedIDs: f45a0000
+    m_LastClickedID: 23284
+    m_ExpandedIDs: 00000000cc5a0000d85a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1011,7 +1011,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e5a000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000cc5a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1036,8 +1036,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 02590000
+    m_LastClickedInstanceID: 22786
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000a5a0000105a0000d6590000905f00008c62000076790000f85f0000385c0000000000000e690000c2580000da580000
     m_RenameOverlay:
@@ -1055,7 +1055,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1086,8 +1086,8 @@ MonoBehaviour:
     y: 0
     width: 500
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
