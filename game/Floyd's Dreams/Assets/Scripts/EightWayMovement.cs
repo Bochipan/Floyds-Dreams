@@ -37,6 +37,11 @@ public class EightWayMovement : MonoBehaviour
 
 
         // Move the character
-        transform.position += (Vector3)direction * speed * Time.deltaTime;
+     
+         transform.position += (Vector3)direction * speed * Time.deltaTime;
+ 
+
     }
+    //private void OnCollisionEnter(Collision collision){
+    //}
 }
