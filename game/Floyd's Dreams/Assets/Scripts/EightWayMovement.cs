@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class EightWayMovement : MonoBehaviour
 
     public float speed = 5f; // Movement speed
     public float diagonalAngle = -30f; // Angle for diagonal movement (in degrees)
+    public Rigidbody2D rb;
     private Animator animator;
 
     private Vector2 movementInput;
@@ -38,7 +40,9 @@ public class EightWayMovement : MonoBehaviour
 
         // Move the character
      
-         transform.position += (Vector3)direction * speed * Time.deltaTime;
+         //transform.position += (Vector3)direction * speed * Time.deltaTime;
+         rb.velocity = new Vector2 (direction.x, direction.y) * speed;
+         
  
 
     }
