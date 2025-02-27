@@ -9,7 +9,10 @@ public class EightWayMovement : MonoBehaviour
     public float speed = 5f; // Movement speed
     public float diagonalAngle = -30f; // Angle for diagonal movement (in degrees)
     public Rigidbody2D rb;
+    public GameObject tp;
+    public Collider2D col;
     private Animator animator;
+
 
     private Vector2 movementInput;
     private Vector2 diagonal = - new Vector2(Mathf.Cos(30*Mathf.Rad2Deg), Mathf.Sin(30 * Mathf.Rad2Deg)).normalized;
@@ -46,6 +49,9 @@ public class EightWayMovement : MonoBehaviour
  
 
     }
-    //private void OnCollisionEnter(Collision collision){
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        transform.position = tp.transform.position;
+    }
 }
