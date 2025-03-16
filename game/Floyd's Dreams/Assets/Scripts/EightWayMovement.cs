@@ -53,16 +53,11 @@ public class EightWayMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == puertas[0]) { 
-            transform.position = tp[0].transform.position;
-        }
-        else if (collision == puertas[1])
+        for (int i = 0; i < tp.Length; i++)
         {
-            transform.position = tp[1].transform.position;
-        }
-        else if (collision == puertas[2])
-        {
-            transform.position = tp[2].transform.position;
+            if (collision == puertas[i]) {
+                transform.position = tp[i].transform.position;     
+            }
         }
     }
 }
