@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Mueble1 : MonoBehaviour
 {
-
-    private string Texto;
+    public Dialogue dialogue;
     public GameObject dialoguebox;
     public GameObject qmark;
     private bool contact = false;
+   
 
     void Start()
     {
@@ -17,10 +17,12 @@ public class Mueble1 : MonoBehaviour
 
     void Update()
     {
-        if (contact && Input.GetButtonDown("Interact"))
+        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue)
         {
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
+
+            dialogue.StartDialogue();
         }
     }
 
@@ -33,8 +35,11 @@ public class Mueble1 : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        
-        dialoguebox.SetActive(false);    
+        if (qmark!=null) qmark.SetActive(false);
+        if (dialoguebox!=null) dialoguebox.SetActive(false);    
+
         contact = false;
+        dialogue.i = 0;
+        dialogue.inDialogue = false; 
     }
 }
