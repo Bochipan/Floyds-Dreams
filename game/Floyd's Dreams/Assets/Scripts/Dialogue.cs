@@ -17,14 +17,14 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TMPro.text = string.Empty;     
+        
     }
 
     // Update is called once per frame
     void Update()
     {
   
-        if (Input.GetButtonDown("Interact")) {
+        if (Input.GetButtonDown("Interact")&&inDialogue) {
             
             if (TMPro.text == lines[i])
             {
@@ -32,6 +32,7 @@ public class Dialogue : MonoBehaviour
             }
             else { 
                 StopAllCoroutines();
+                 
                 TMPro.text = lines[i];
                 
             }
@@ -46,20 +47,21 @@ public class Dialogue : MonoBehaviour
         qmark.SetActive(false);
         inDialogue = true;
         i = 0;
-
+       
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine() {
  
         foreach (char c in lines[i].ToCharArray()) {
-
+            
             TMPro.text += c;
             yield return new WaitForSeconds(speed);
         }
     }
 
     void NextLine() {
+       
         if (i < lines.Length-1)
         {
             i++;

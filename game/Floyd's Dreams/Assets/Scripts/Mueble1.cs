@@ -21,7 +21,7 @@ public class Mueble1 : MonoBehaviour
         {
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
-
+            
             dialogue.StartDialogue();
         }
     }
