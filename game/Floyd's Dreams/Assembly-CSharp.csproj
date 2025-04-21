@@ -59,8 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dialogue.cs" />
-    <Compile Include="Assets\Scripts\Mueble1.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\EightWayMovement.cs" />
+    <Compile Include="Assets\Scripts\Talkable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -355,7 +355,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Dialogue.cs"
 "Assets/Scripts/EightWayMovement.cs"
-"Assets/Scripts/Mueble1.cs"
+"Assets/Scripts/Interactable.cs"
+"Assets/Scripts/Talkable.cs"
 -langversion:9.0
 
 /deterministic
