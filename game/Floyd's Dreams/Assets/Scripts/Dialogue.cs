@@ -6,6 +6,9 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public GameObject qmark;
+    public GameObject buttonYES;
+    public GameObject buttonNO;
+    public GameManager GM;
     public bool inDialogue = false;
 
     public TextMeshProUGUI TMPro;
@@ -24,16 +27,23 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
   
-        if (Input.GetButtonDown("Interact")&&inDialogue) {
+        if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf) {
+
+            if (lines[i][lines[i].Length - 1] == '&')
+            {
+                buttonYES.SetActive(true);
+                buttonNO.SetActive(true);
+
+            }
             
             if (TMPro.text == lines[i])
             {
-                NextLine();
+                 NextLine();
             }
             else { 
                 StopAllCoroutines();
                  
-                TMPro.text = lines[i];
+                TMPro.text = lines[i].Trim('&');
                 
             }
         }       
@@ -55,8 +65,17 @@ public class Dialogue : MonoBehaviour
  
         foreach (char c in lines[i].ToCharArray()) {
             
-            TMPro.text += c;
-            yield return new WaitForSeconds(speed);
+
+            if (c == '&') {
+                buttonYES.SetActive(true);
+                buttonNO.SetActive(true);
+ 
+            }
+            else { 
+
+                TMPro.text += c;
+                yield return new WaitForSeconds(speed);
+            }
         }
     }
 
@@ -74,4 +93,18 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public void AnswerYes()
+    {
+        GM.choice1 = true;
+        buttonYES.SetActive(false);
+        buttonNO.SetActive(false);
+        NextLine();
+    }
+    public void AnswerNo()
+    {
+        GM.choice1 = false;
+        buttonYES.SetActive(false);
+        buttonNO.SetActive(false);
+        NextLine();
+    }
 }
