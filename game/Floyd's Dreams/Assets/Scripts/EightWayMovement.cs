@@ -13,6 +13,7 @@ public class EightWayMovement : MonoBehaviour
     public Collider2D col;
     public Collider2D[] puertas;
     private Animator animator;
+    public Dialogue dialogueBox;
 
 
     private Vector2 movementInput;
@@ -26,28 +27,28 @@ public class EightWayMovement : MonoBehaviour
 
     void Update()
     {
-        // Get input
-        movementInput.x = Input.GetAxisRaw("Horizontal");
-        movementInput.y = Input.GetAxisRaw("Vertical");
+        if (dialogueBox.inDialogue == false) { 
 
-        animator.SetFloat("x", movementInput.x);
-        animator.SetFloat("y", movementInput.y);
+            // Get input
+            movementInput.x = Input.GetAxisRaw("Horizontal");
+            movementInput.y = Input.GetAxisRaw("Vertical");
 
-        // Calculate movement direction based on input
-        Vector2 direction = new Vector2(movementInput.x, movementInput.y);
+            animator.SetFloat("x", movementInput.x);
+            animator.SetFloat("y", movementInput.y);
 
-        // Adjust diagonal direction
-        if (direction.x != 0 && direction.y != 0)
-        {
-            direction = diagonal * direction;
-        }
+            // Calculate movement direction based on input
+            Vector2 direction = new Vector2(movementInput.x, movementInput.y);
 
+            // Adjust diagonal direction
+            if (direction.x != 0 && direction.y != 0)
+            {
+                direction = diagonal * direction;
+            }
 
-        // Move the character
-     
-         //transform.position += (Vector3)direction * speed * Time.deltaTime;
-         rb.velocity = new Vector2 (direction.x, direction.y) * speed;
-         
+            // Move the character
+             rb.velocity = new Vector2 (direction.x, direction.y) * speed;
+        } 
+
  
 
     }

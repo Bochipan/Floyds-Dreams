@@ -4,12 +4,15 @@ using UnityEngine;
 using TMPro;
 
 public class Dialogue : MonoBehaviour
-{
+{  
     public GameObject qmark;
     public GameObject buttonYES;
     public GameObject buttonNO;
+    public GameObject floydPort;
+    public GameObject kalenPort;
     public GameManager GM;
     public bool inDialogue = false;
+    public bool isKalen = false;
 
     public TextMeshProUGUI TMPro;
 
@@ -26,6 +29,16 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if (isKalen) {
+            kalenPort.SetActive(true);
+            floydPort.SetActive(false);
+        }
+        else { 
+            kalenPort.SetActive(false);
+            floydPort.SetActive(true);
+        }
   
         if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf) {
 
@@ -35,15 +48,18 @@ public class Dialogue : MonoBehaviour
                 buttonNO.SetActive(true);
 
             }
-            
-            if (TMPro.text == lines[i])
+          
+
+            if (TMPro.text == lines[i].Trim('*'))
+
             {
                  NextLine();
             }
             else { 
+
                 StopAllCoroutines();
                  
-                TMPro.text = lines[i].Trim('&');
+                TMPro.text = lines[i].Trim('&', '*');
                 
             }
         }       
@@ -65,8 +81,9 @@ public class Dialogue : MonoBehaviour
  
         foreach (char c in lines[i].ToCharArray()) {
             
+            if (c == '*') { isKalen = true; }
 
-            if (c == '&') {
+            else if (c == '&') {
                 buttonYES.SetActive(true);
                 buttonNO.SetActive(true);
  
@@ -85,6 +102,7 @@ public class Dialogue : MonoBehaviour
         {
             i++;
             TMPro.text = string.Empty;
+            isKalen = false;
             StartCoroutine(TypeLine());
         }
         else {
