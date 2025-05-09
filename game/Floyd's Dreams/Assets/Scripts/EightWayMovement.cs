@@ -64,7 +64,6 @@ public class EightWayMovement : MonoBehaviour
     {
         if (collision.name == "Puerta7" || collision.name == "Final" || collision.name == "Puerta9")
         {
-
             fade.Fade();
             inTransition = true;
         }

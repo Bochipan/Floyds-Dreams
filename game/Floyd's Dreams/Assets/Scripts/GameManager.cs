@@ -20,9 +20,7 @@ public class GameManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
-        public bool choice1 = false; 
-        public bool choice2 = false;
-
+        public int currentChoice = 0;
+        public bool[] choices = new bool[7];
 
 }

@@ -81,7 +81,11 @@ public class Dialogue : MonoBehaviour
  
         foreach (char c in lines[i].ToCharArray()) {
             
-            if (c == '*') { isKalen = true; }
+            if (c == '*') { 
+                isKalen = true;
+                GM.choices[1] = true;
+                GM.currentChoice++;
+            }
 
             else if (c == '&') {
                 buttonYES.SetActive(true);
@@ -113,16 +117,18 @@ public class Dialogue : MonoBehaviour
 
     public void AnswerYes()
     {
-        GM.choice1 = true;
+        GM.choices[GM.currentChoice] = true;
         buttonYES.SetActive(false);
         buttonNO.SetActive(false);
+        GM.currentChoice++;
         NextLine();
     }
     public void AnswerNo()
     {
-        GM.choice1 = false;
+        GM.choices[GM.currentChoice] = false;
         buttonYES.SetActive(false);
         buttonNO.SetActive(false);
+        GM.currentChoice++;
         NextLine();
     }
 }
