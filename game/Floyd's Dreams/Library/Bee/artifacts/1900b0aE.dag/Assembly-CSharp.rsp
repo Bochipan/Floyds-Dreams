@@ -357,6 +357,7 @@
 "Assets/Scripts/EightWayMovement.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Interactable.cs"
+"Assets/Scripts/SpriteFade.cs"
 "Assets/Scripts/Talkable.cs"
 -langversion:9.0
 

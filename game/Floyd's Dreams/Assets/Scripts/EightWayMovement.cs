@@ -14,10 +14,12 @@ public class EightWayMovement : MonoBehaviour
     public Collider2D[] puertas;
     private Animator animator;
     public Dialogue dialogueBox;
+    public SpriteFade fade;
 
 
     private Vector2 movementInput;
     private Vector2 diagonal = - new Vector2(Mathf.Cos(30*Mathf.Rad2Deg), Mathf.Sin(30 * Mathf.Rad2Deg)).normalized;
+    public bool inTransition = false;
 
 
     void Start()
@@ -27,7 +29,8 @@ public class EightWayMovement : MonoBehaviour
 
     void Update()
     {
-        if (dialogueBox.inDialogue == false) { 
+        if (dialogueBox.inDialogue == false && !inTransition)
+        {
 
             // Get input
             movementInput.x = Input.GetAxisRaw("Horizontal");
@@ -46,14 +49,25 @@ public class EightWayMovement : MonoBehaviour
             }
 
             // Move the character
-             rb.velocity = new Vector2 (direction.x, direction.y) * speed;
-        } 
+            rb.velocity = new Vector2(direction.x, direction.y) * speed;
+        }
+        else {
+            rb.velocity = new Vector2(0, 0);
+            animator.SetFloat("x", 0);
+            animator.SetFloat("y", 0);
+        }
 
  
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.name == "Puerta7" || collision.name == "Final" || collision.name == "Puerta9")
+        {
+
+            fade.Fade();
+            inTransition = true;
+        }
         for (int i = 0; i < tp.Length; i++)
         {
             if (collision == puertas[i]) {
@@ -61,4 +75,6 @@ public class EightWayMovement : MonoBehaviour
             }
         }
     }
+
+
 }
