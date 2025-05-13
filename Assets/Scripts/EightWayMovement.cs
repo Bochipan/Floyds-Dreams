@@ -9,7 +9,6 @@ public class EightWayMovement : MonoBehaviour
 {
 
     public float speed = 5f; // Movement speed
-    public float diagonalAngle = -30f; // Angle for diagonal movement (in degrees)
     public Rigidbody2D rb;
     public GameObject[] tp;
     public Collider2D col;
@@ -95,12 +94,20 @@ public class EightWayMovement : MonoBehaviour
             dialogue.StartDialogue();
             
         }
+
+        /*
         for (int i = 0; i < tp.Length; i++)
         {
-                if (collision == puertas[i])
+                if (collision == puertas[i]) // tp.Any(collision.name[-1].Contains)
                 {
                     transform.position = tp[i].transform.position;
                 }
+        }
+        */
+
+        if (tp.Any(collision.name.Substring(6).Contains)) 
+        {
+           transform.position = tp[collision.name.Substring(6)-1].transform.position;
         }
 
         yield return null;
