@@ -12,8 +12,9 @@ public class Dialogue : MonoBehaviour
     public GameObject floydPort;
     public GameObject kalenPort;
     public GameManager GM;
-    public bool inDialogue = false;
-    public bool isKalen = false;
+    public bool inDialogue;
+    private bool isKalen, isStranger;
+    public bool KalenDone, eventDone;
 
     public TextMeshProUGUI TMPro;
     public Image black;
@@ -38,12 +39,18 @@ public class Dialogue : MonoBehaviour
         if (isKalen) {
             kalenPort.SetActive(true);
             floydPort.SetActive(false);
+
+        }
+        else if(isStranger)
+        {
+            floydPort.SetActive(false);
         }
         else { 
-            kalenPort.SetActive(false);
             floydPort.SetActive(true);
+            kalenPort.SetActive(false);
         }
-  
+
+
         if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf) {
 
             if (lines[i][lines[i].Length - 1] == '&')
@@ -59,11 +66,16 @@ public class Dialogue : MonoBehaviour
             {
                  NextLine();
             }
+            if (TMPro.text == lines[i].Trim('+'))
+
+            {
+                NextLine();
+            }
             else { 
 
                 StopAllCoroutines();
                  
-                TMPro.text = lines[i].Trim('&', '*');
+                TMPro.text = lines[i].Trim('&', '*','+');
                 
             }
         }       
@@ -77,7 +89,7 @@ public class Dialogue : MonoBehaviour
         qmark.SetActive(false);
         inDialogue = true;
         i = 0;
-       
+        
         StartCoroutine(TypeLine());
     }
 
@@ -87,8 +99,12 @@ public class Dialogue : MonoBehaviour
             
             if (c == '*') { 
                 isKalen = true;
-                GM.choices[1] = true;
-                GM.currentChoice++;
+                GM.currentChoice = 1;
+            }
+            if (c == '+')
+            {
+                isStranger = true;
+                GM.currentChoice = 3;
             }
 
             else if (c == '&') {
@@ -111,9 +127,12 @@ public class Dialogue : MonoBehaviour
             i++;
             TMPro.text = string.Empty;
             isKalen = false;
+            isStranger = false; 
             StartCoroutine(TypeLine());
         }
         else {
+            if (isKalen) KalenDone = true;
+            if (isStranger) eventDone = true;
             gameObject.SetActive(false);
             inDialogue = false;
             if (black.color.a == 1f) fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
@@ -126,7 +145,6 @@ public class Dialogue : MonoBehaviour
         GM.choices[GM.currentChoice] = true;
         buttonYES.SetActive(false);
         buttonNO.SetActive(false);
-        GM.currentChoice++;
         NextLine();
     }
     public void AnswerNo()
@@ -134,7 +152,6 @@ public class Dialogue : MonoBehaviour
         GM.choices[GM.currentChoice] = false;
         buttonYES.SetActive(false);
         buttonNO.SetActive(false);
-        GM.currentChoice++;
         NextLine();
     }
 }

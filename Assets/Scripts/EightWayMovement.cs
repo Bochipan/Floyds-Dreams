@@ -95,7 +95,7 @@ public class EightWayMovement : MonoBehaviour
             
         }
 
-        /*
+        
         for (int i = 0; i < tp.Length; i++)
         {
                 if (collision == puertas[i]) // tp.Any(collision.name[-1].Contains)
@@ -103,7 +103,7 @@ public class EightWayMovement : MonoBehaviour
                     transform.position = tp[i].transform.position;
                 }
         }
-        */
+        /*
 
         if (tp.Any(collision.name.Substring(6).Contains)) 
         {
@@ -111,6 +111,7 @@ public class EightWayMovement : MonoBehaviour
         }
 
         yield return null;
+        */
     }
 
 

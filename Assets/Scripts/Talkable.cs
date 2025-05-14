@@ -7,9 +7,11 @@ public class Talkable : MonoBehaviour
 {
     public Dialogue dialogue;
     public GameObject dialoguebox;
-    public GameObject dbox;
+    public GameObject bubble;
     private bool contact = false;
     public string[] lines;
+    public bool isKalen;
+
 
 
     void Start()
@@ -19,10 +21,10 @@ public class Talkable : MonoBehaviour
 
     void Update()
     {
-        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue)
+        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !(isKalen && dialogue.KalenDone) && !dialogue.eventDone)
         {
             dialoguebox.SetActive(true);
-            dbox.SetActive(false);
+            bubble.SetActive(false);
             
             dialogue.lines = lines;
             dialogue.StartDialogue();
@@ -31,14 +33,14 @@ public class Talkable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        dbox.SetActive(true);
-        dbox.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1f, -0.1f);
+        if (!(isKalen && dialogue.KalenDone)) bubble.SetActive(true);
+        bubble.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1f, -0.1f);
         contact = true;
         
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (dbox != null) dbox.SetActive(false);
+        if (bubble != null) bubble.SetActive(false);
         if (dialoguebox!=null) dialoguebox.SetActive(false);    
 
         contact = false;
