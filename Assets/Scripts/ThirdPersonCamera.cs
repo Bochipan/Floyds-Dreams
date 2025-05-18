@@ -15,15 +15,15 @@ public class CameraMove : MonoBehaviour
     public float distance = 10.0f;
     private float currentX = 0.0f;
     private float currentY = 0.0f;
-    public float sensivityY = 4.0f;
-    public float sensivityX = 4.0f;
+    public float sensivityY = 6.0f;
+    public float sensivityX = 6.0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+            Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // Update is called once per frame

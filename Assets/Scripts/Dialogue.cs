@@ -11,7 +11,9 @@ public class Dialogue : MonoBehaviour
     public GameObject buttonNO;
     public GameObject floydPort;
     public GameObject kalenPort;
-    public GameManager GM;
+    public GameObject floyd;
+    public PauseMenu pause;
+
     public bool inDialogue;
     private bool isKalen, isStranger;
     public bool KalenDone, eventDone;
@@ -25,13 +27,10 @@ public class Dialogue : MonoBehaviour
     public float speed;
     public int i;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        floyd.SetActive(false); 
     }
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -51,7 +50,7 @@ public class Dialogue : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf) {
+        if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf && !GameManager.Instance.paused) {
 
             if (lines[i][lines[i].Length - 1] == '&')
             {
@@ -99,12 +98,12 @@ public class Dialogue : MonoBehaviour
             
             if (c == '*') { 
                 isKalen = true;
-                GM.currentChoice = 1;
+                GameManager.Instance.currentChoice = 1;
             }
             if (c == '+')
             {
                 isStranger = true;
-                GM.currentChoice = 3;
+                GameManager.Instance.currentChoice = 3;
             }
 
             else if (c == '&') {
@@ -120,38 +119,67 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void NextLine() {
-       
-        if (i < lines.Length-1)
+    void NextLine()
+    {
+
+        if (i < lines.Length - 1)
         {
             i++;
             TMPro.text = string.Empty;
             isKalen = false;
-            isStranger = false; 
+            isStranger = false;
             StartCoroutine(TypeLine());
         }
-        else {
+        else
+        {
             if (isKalen) KalenDone = true;
             if (isStranger) eventDone = true;
+
+            Debug.Log(GameManager.Instance.currentChoice);
+            Debug.Log(GameManager.Instance.choices[GameManager.Instance.currentChoice]);
+            
+
+            if (black.color.a == 1f)
+            {
+                fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
+                final.SetActive(false);
+            }
+            if (!floyd.activeSelf) {
+
+                fade.Fade();
+                
+            }
             gameObject.SetActive(false);
             inDialogue = false;
-            if (black.color.a == 1f) fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
-            final.SetActive(false);
         }
+
     }
 
     public void AnswerYes()
-    {
-        GM.choices[GM.currentChoice] = true;
-        buttonYES.SetActive(false);
-        buttonNO.SetActive(false);
-        NextLine();
+    {   
+        if (GameManager.Instance.currentChoice == -1) 
+        {
+            fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
+            pause.StartDream();
+
+        }
+        else 
+        {
+            GameManager.Instance.choices[GameManager.Instance.currentChoice] = true;
+            buttonYES.SetActive(false);
+            buttonNO.SetActive(false);
+            NextLine();
+        }
+
     }
     public void AnswerNo()
     {
-        GM.choices[GM.currentChoice] = false;
-        buttonYES.SetActive(false);
-        buttonNO.SetActive(false);
-        NextLine();
+        if (!(GameManager.Instance.currentChoice == -1)) { 
+             GameManager.Instance.choices[GameManager.Instance.currentChoice] = false;
+            buttonYES.SetActive(false);
+            buttonNO.SetActive(false);
+            NextLine();
+        }
+
     }
 }

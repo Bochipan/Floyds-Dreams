@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Dialogue3D dialogue;
     public GameObject dialoguebox;
     public GameObject qmark;
     private bool contact = false;
     public string[] lines;
 
 
-    void Start()
-    {
-   
-    }
-
     void Update()
     {
-        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue)
+        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !GameManager.Instance.paused)
         {
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
@@ -30,8 +25,9 @@ public class Interactable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("pum");
         qmark.SetActive(true);
-        qmark.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1.5f, -0.1f);
+        qmark.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1.5f, -0.3f);
         contact = true;
         
     }
@@ -43,5 +39,21 @@ public class Interactable : MonoBehaviour
         contact = false;
         dialogue.i = 0;
         dialogue.inDialogue = false; 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        qmark.SetActive(true);
+        qmark.transform.position = transform.position + GetComponent<MeshRenderer>().bounds.size / 2 + new Vector3(-0.1f, 1.5f, -0.3f);
+        contact = true;
+
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (qmark != null) qmark.SetActive(false);
+        if (dialoguebox != null) dialoguebox.SetActive(false);
+
+        contact = false;
+        dialogue.i = 0;
+        dialogue.inDialogue = false;
     }
 }

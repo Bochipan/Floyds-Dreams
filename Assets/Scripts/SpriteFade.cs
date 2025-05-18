@@ -8,6 +8,7 @@ public class SpriteFade : MonoBehaviour
     public Image spriteRenderer;
     public Color spriteColor;
     public EightWayMovement Floyd;
+    public GameObject sleep;
 
     void Start()
     {
@@ -18,7 +19,8 @@ public class SpriteFade : MonoBehaviour
 
     public void Fade() {
         StartCoroutine(FadeInOut());
-        
+        if (!Floyd.gameObject.activeSelf) StartCoroutine(wakeFloyd());
+
     }
 
     public IEnumerator FadeInOut()
@@ -51,4 +53,12 @@ public class SpriteFade : MonoBehaviour
         spriteColor.a = targetAlpha;
         spriteRenderer.color = spriteColor;
     }
+    public IEnumerator wakeFloyd()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Floyd.gameObject.SetActive(true);
+        sleep.SetActive(false);
+
+    }
+
 }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Talkable : MonoBehaviour
 {
@@ -14,14 +13,9 @@ public class Talkable : MonoBehaviour
 
 
 
-    void Start()
-    {
-   
-    }
-
     void Update()
     {
-        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !(isKalen && dialogue.KalenDone) && !dialogue.eventDone)
+        if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !(isKalen && dialogue.KalenDone) && !dialogue.eventDone && !GameManager.Instance.paused)
         {
             dialoguebox.SetActive(true);
             bubble.SetActive(false);
@@ -33,8 +27,8 @@ public class Talkable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!(isKalen && dialogue.KalenDone)) bubble.SetActive(true);
-        bubble.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1f, -0.1f);
+        if (!(isKalen && dialogue.KalenDone) && !(dialogue.eventDone)) bubble.SetActive(true);
+        bubble.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1f, -0.3f);
         contact = true;
         
     }
