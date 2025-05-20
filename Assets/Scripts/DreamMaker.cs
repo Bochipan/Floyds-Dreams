@@ -31,16 +31,16 @@ public class DreamMaker : MonoBehaviour
         }
         if (GameManager.Instance.choices[2])
         {
-            dream1.SetActive(true);
+            floyd.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         }
         if (GameManager.Instance.choices[3])
         {
-            floyd.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
-
+            dream1.SetActive(true);
         }
         else {
             dream2.SetActive(true);
         }
+        
         
     }
 }

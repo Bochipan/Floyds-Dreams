@@ -11,8 +11,6 @@ public class Talkable : MonoBehaviour
     public string[] lines;
     public bool isKalen;
 
-
-
     void Update()
     {
         if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !(isKalen && dialogue.KalenDone) && !dialogue.eventDone && !GameManager.Instance.paused)

@@ -9,16 +9,15 @@ public class PlayerMove : MonoBehaviour
     public float turnSpeed = 20f;
 
     public Animator animator;
-    public Rigidbody Rrigidbody;
+    public Rigidbody rb;
 
-    //Vector3 movement;
     public Vector3 offset;
     Quaternion rotation = Quaternion.identity;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        Rrigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -35,8 +34,7 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 forwardRelativeVerticalInput = vertical * forward;
         Vector3 rightRelativeHorizontalInput = horizontal * right;
-        Vector3 cameraRelativeMovement = forwardRelativeVerticalInput
-                + rightRelativeHorizontalInput;
+        Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
 
 
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
@@ -50,17 +48,13 @@ public class PlayerMove : MonoBehaviour
         rotation = Quaternion.LookRotation(desiredForward);
         if (isWalking == false)
         {
-            Rrigidbody.velocity = Vector3.zero;
-            Rrigidbody.angularVelocity = Vector3.zero;
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
         }
         else {
-            Rrigidbody.MovePosition(cameraRelativeMovement);
+            rb.MovePosition(cameraRelativeMovement);
             transform.Translate(cameraRelativeMovement * moveSpeed, Space.World);
-            Rrigidbody.MoveRotation(rotation);
+            rb.MoveRotation(rotation);
         }
-        
-       
-
-
     }
 }

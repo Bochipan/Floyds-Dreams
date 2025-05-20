@@ -7,25 +7,22 @@ public class SpriteFade : MonoBehaviour
 {
     public Image spriteRenderer;
     public Color spriteColor;
-    public EightWayMovement Floyd;
+    public Floyd Floyd;
     public GameObject sleep;
 
     void Start()
     {
         spriteRenderer = GetComponent<Image>();
         spriteColor = spriteRenderer.color;
-        
     }
 
     public void Fade() {
         StartCoroutine(FadeInOut());
         if (!Floyd.gameObject.activeSelf) StartCoroutine(wakeFloyd());
-
     }
 
     public IEnumerator FadeInOut()
-    {
-        
+    {        
         yield return StartCoroutine(FadeTo(1f, 0.5f));
 
         yield return new WaitForSeconds(0.5f);

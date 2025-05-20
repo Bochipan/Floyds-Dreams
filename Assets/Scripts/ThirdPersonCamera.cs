@@ -18,20 +18,16 @@ public class CameraMove : MonoBehaviour
     public float sensivityY = 6.0f;
     public float sensivityX = 6.0f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-            Cursor.lockState = CursorLockMode.Locked;
-        
+            Cursor.lockState = CursorLockMode.Locked; 
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
 
         currentX += Input.GetAxis("Mouse X") * sensivityX * Time.deltaTime;
-        currentY += Input.GetAxis("Mouse Y")  * sensivityY * Time.deltaTime;
+        currentY -= Input.GetAxis("Mouse Y")  * sensivityY * Time.deltaTime;
 
         currentY = Mathf.Clamp(currentY, YMin, YMax);
 
@@ -40,10 +36,6 @@ public class CameraMove : MonoBehaviour
         transform.position = lookAt.position + rotation * Direction;
 
         transform.LookAt(lookAt.position);
-        
-        
-
-
 
     }
 }

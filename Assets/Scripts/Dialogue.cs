@@ -59,19 +59,14 @@ public class Dialogue : MonoBehaviour
 
             }
           
-
-            if (TMPro.text == lines[i].Trim('*'))
+            if (TMPro.text == lines[i].Trim('*','+'))
 
             {
                  NextLine();
             }
-            if (TMPro.text == lines[i].Trim('+'))
 
-            {
-                NextLine();
-            }
-            else { 
-
+            else{
+                
                 StopAllCoroutines();
                  
                 TMPro.text = lines[i].Trim('&', '*','+');
@@ -100,7 +95,7 @@ public class Dialogue : MonoBehaviour
                 isKalen = true;
                 GameManager.Instance.currentChoice = 1;
             }
-            if (c == '+')
+            else if (c == '+')
             {
                 isStranger = true;
                 GameManager.Instance.currentChoice = 3;
@@ -122,6 +117,7 @@ public class Dialogue : MonoBehaviour
     void NextLine()
     {
 
+
         if (i < lines.Length - 1)
         {
             i++;
@@ -135,10 +131,8 @@ public class Dialogue : MonoBehaviour
             if (isKalen) KalenDone = true;
             if (isStranger) eventDone = true;
 
-            Debug.Log(GameManager.Instance.currentChoice);
-            Debug.Log(GameManager.Instance.choices[GameManager.Instance.currentChoice]);
             
-
+            
             if (black.color.a == 1f)
             {
                 fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
@@ -170,7 +164,6 @@ public class Dialogue : MonoBehaviour
             buttonNO.SetActive(false);
             NextLine();
         }
-
     }
     public void AnswerNo()
     {
@@ -180,6 +173,5 @@ public class Dialogue : MonoBehaviour
             buttonNO.SetActive(false);
             NextLine();
         }
-
     }
 }

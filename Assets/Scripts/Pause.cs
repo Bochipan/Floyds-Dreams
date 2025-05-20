@@ -9,8 +9,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public Button pauseButton;
 
-
-
     void Start()
     {
         Button btn = pauseButton.GetComponent<Button>();

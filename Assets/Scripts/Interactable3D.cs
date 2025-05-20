@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Interactable3D : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Dialogue3D dialogue;
     public GameObject dialoguebox;
     public GameObject qmark;
     private bool contact = false;
