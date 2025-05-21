@@ -1563,18 +1563,22 @@ MonoBehaviour:
   - {fileID: 1241220930}
   - {fileID: 706121885}
   - {fileID: 428996935}
-  kalen: {fileID: 2063140203}
   light1: {fileID: 1071848847}
   light2: {fileID: 1377553195}
   wakeUpLines:
-  - wahhhhh
-  - wake up?&
-  - lesgo
+  - ...
+  - Yaaawnn~
+  - There's still five more minutes until the alarm goes off.
+  - Should I just get up already?&
+  - Alright!
   toBedLines:
-  - goto bed?&
+  - It's been a long day... I'm exhausted!
+  - I think I've already done everything I wanted to do today.
+  - Go to bed now?&
   atworkLines:
-  - at work
-  - work harder&
+  - A long shift at work starts and finishes in the blink of an eye.
+  - The boss proposes doing some extra hours (paid)!
+  - Stay for the extra hours?&
   inTransition: 0
 --- !u!1 &1530770407
 GameObject:
@@ -2351,6 +2355,10 @@ PrefabInstance:
       propertyPath: dialoguebox
       value: 
       objectReference: {fileID: 977343038}
+    - target: {fileID: 5086286182938731573, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: The dining table. Kalen likes to have breakfast here.
+      objectReference: {fileID: 0}
     - target: {fileID: 5627190322405143971, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
       propertyPath: qmark
       value: 
@@ -2391,6 +2399,30 @@ PrefabInstance:
       propertyPath: dialoguebox
       value: 
       objectReference: {fileID: 977343038}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Good morning Kalen!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: '*Morning, Floyd. Hope you slept alright!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: '*Why don''t you take some breakfast to eat on the go?&'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: Talk to you later~
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689852549241460446, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: '*Sure thing, see you soon!'
+      objectReference: {fileID: 0}
     - target: {fileID: 7041724978281274906, guid: c60ca3836ec88f64e87b84fdf4b68d7b, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 15
@@ -3051,6 +3083,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1312219383934621516, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546165506988892305, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 203
+      objectReference: {fileID: 0}
     - target: {fileID: 5256666257523712462, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: final
       value: 
@@ -3059,6 +3099,14 @@ PrefabInstance:
       propertyPath: floyd
       value: 
       objectReference: {fileID: 795711415}
+    - target: {fileID: 5256666257523712462, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: kalen
+      value: 
+      objectReference: {fileID: 2063140203}
+    - target: {fileID: 5256666257523712462, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: stranger
+      value: 
+      objectReference: {fileID: 8341742721365777049}
     - target: {fileID: 6416961975469974865, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3103,6 +3151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7678100040465788877, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -86
+      objectReference: {fileID: 0}
     - target: {fileID: 8215007714440581600, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: Floyd
       value: 
@@ -3111,6 +3163,10 @@ PrefabInstance:
       propertyPath: sleep
       value: 
       objectReference: {fileID: 553529119}
+    - target: {fileID: 8346586565501311372, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3198,7 +3254,19 @@ PrefabInstance:
       objectReference: {fileID: 977343038}
     - target: {fileID: 2050605275448510698, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050605275448510698, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: +Oh geez... I dropped my groceries all over the place...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050605275448510698, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: The lady seems to be in trouble. Help her?&
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050605275448510698, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: +...
       objectReference: {fileID: 0}
     - target: {fileID: 2050605275448510698, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
       propertyPath: lines.Array.data[3]
@@ -3285,6 +3353,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
+--- !u!1 &8341742721365777049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8388248846787500298, guid: 9bfbf79ff220d694c9d25e17deb29830, type: 3}
+  m_PrefabInstance: {fileID: 8341742721365777048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8918999676340391475
 PrefabInstance:
   m_ObjectHideFlags: 0

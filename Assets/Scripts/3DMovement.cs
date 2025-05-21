@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
 
     public Animator animator;
     public Rigidbody rb;
-
+    public Dialogue3D dialogue;
     public Vector3 offset;
     Quaternion rotation = Quaternion.identity;
 
@@ -22,39 +22,42 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        Debug.Log(dialogue.inDialogue);
+        if (!dialogue.inDialogue) { 
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        Vector3 forward = Camera.main.transform.forward;
-        Vector3 right = Camera.main.transform.right;
-        forward.y = 0;
-        right.y = 0;
-        forward = forward.normalized;
-        right = right.normalized;
+            Vector3 forward = Camera.main.transform.forward;
+            Vector3 right = Camera.main.transform.right;
+            forward.y = 0;
+            right.y = 0;
+            forward = forward.normalized;
+            right = right.normalized;
 
-        Vector3 forwardRelativeVerticalInput = vertical * forward;
-        Vector3 rightRelativeHorizontalInput = horizontal * right;
-        Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
-
-
-        bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
-        bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
-        bool isWalking = hasHorizontalInput || hasVerticalInput;
-        animator.SetBool("Walk", isWalking);
+            Vector3 forwardRelativeVerticalInput = vertical * forward;
+            Vector3 rightRelativeHorizontalInput = horizontal * right;
+            Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
 
 
-        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, 
-                cameraRelativeMovement, turnSpeed * Time.deltaTime, 0f);
-        rotation = Quaternion.LookRotation(desiredForward);
-        if (isWalking == false)
-        {
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-        }
-        else {
-            rb.MovePosition(cameraRelativeMovement);
-            transform.Translate(cameraRelativeMovement * moveSpeed, Space.World);
-            rb.MoveRotation(rotation);
+            bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
+            bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
+            bool isWalking = hasHorizontalInput || hasVerticalInput;
+            animator.SetBool("Walk", isWalking);
+
+
+            Vector3 desiredForward = Vector3.RotateTowards(transform.forward, 
+                    cameraRelativeMovement, turnSpeed * Time.deltaTime, 0f);
+            rotation = Quaternion.LookRotation(desiredForward);
+            if (isWalking == false)
+            {
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
+            else {
+                rb.MovePosition(cameraRelativeMovement);
+                transform.Translate(cameraRelativeMovement * moveSpeed, Space.World);
+                rb.MoveRotation(rotation);
+            }
         }
     }
 }

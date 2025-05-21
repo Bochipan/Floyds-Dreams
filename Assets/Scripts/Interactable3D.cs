@@ -22,22 +22,6 @@ public class Interactable3D : MonoBehaviour
             dialogue.StartDialogue();
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        qmark.SetActive(true);
-        qmark.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1.5f, -0.3f);
-        contact = true;
-        
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (qmark!=null) qmark.SetActive(false);
-        if (dialoguebox!=null) dialoguebox.SetActive(false);    
-
-        contact = false;
-        dialogue.i = 0;
-        dialogue.inDialogue = false; 
-    }
     private void OnCollisionEnter(Collision collision)
     {
         qmark.SetActive(true);

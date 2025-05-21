@@ -14,7 +14,7 @@ public class Floyd : MonoBehaviour
     public Collider2D[] puertas;
     public GameObject[] tp;
     public GameObject[] rooms;
-    public GameObject kalen;
+
    
     
 
@@ -66,7 +66,7 @@ public class Floyd : MonoBehaviour
 
             light1.color = new Color(0.14f, 0.08f, 0.94f);
             light2.color = new Color(0.14f, 0.08f, 0.94f);
-            kalen.SetActive(false);
+            
             principio.SetActive(true);
 
             GameManager.Instance.currentChoice = 4;

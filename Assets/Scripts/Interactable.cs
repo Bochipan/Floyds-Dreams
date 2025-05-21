@@ -38,20 +38,4 @@ public class Interactable : MonoBehaviour
         dialogue.i = 0;
         dialogue.inDialogue = false; 
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        qmark.SetActive(true);
-        qmark.transform.position = transform.position + GetComponent<MeshRenderer>().bounds.size / 2 + new Vector3(-0.1f, 1.5f, -0.3f);
-        contact = true;
-
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (qmark != null) qmark.SetActive(false);
-        if (dialoguebox != null) dialoguebox.SetActive(false);
-
-        contact = false;
-        dialogue.i = 0;
-        dialogue.inDialogue = false;
-    }
 }

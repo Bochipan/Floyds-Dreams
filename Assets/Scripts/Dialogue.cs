@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour
     public GameObject floydPort;
     public GameObject kalenPort;
     public GameObject floyd;
+    public GameObject stranger;
+    public GameObject kalen;
     public PauseMenu pause;
 
     public bool inDialogue;
@@ -131,7 +133,8 @@ public class Dialogue : MonoBehaviour
             if (isKalen) KalenDone = true;
             if (isStranger) eventDone = true;
 
-            
+            isKalen = false;
+            isStranger = false;
             
             if (black.color.a == 1f)
             {
@@ -153,25 +156,31 @@ public class Dialogue : MonoBehaviour
     {   
         if (GameManager.Instance.currentChoice == -1) 
         {
-            fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
+            fade.StartCoroutine(fade.FadeTo(1f, 0.5f));
             pause.StartDream();
 
         }
         else 
         {
+            
+            
             GameManager.Instance.choices[GameManager.Instance.currentChoice] = true;
             buttonYES.SetActive(false);
             buttonNO.SetActive(false);
-            NextLine();
+            if (GameManager.Instance.currentChoice == 4) kalen.SetActive(false);
+            if (GameManager.Instance.currentChoice == 3) {
+                fade.Fade();
+                stranger.SetActive(false); 
+            }
+            else NextLine();
         }
     }
     public void AnswerNo()
     {
-        if (!(GameManager.Instance.currentChoice == -1)) { 
-             GameManager.Instance.choices[GameManager.Instance.currentChoice] = false;
-            buttonYES.SetActive(false);
-            buttonNO.SetActive(false);
-            NextLine();
-        }
+        if (!(GameManager.Instance.currentChoice == -1)) GameManager.Instance.choices[GameManager.Instance.currentChoice] = false;
+        if (GameManager.Instance.currentChoice == 4) kalen.SetActive(false);
+        buttonYES.SetActive(false);
+        buttonNO.SetActive(false);
+        NextLine();
     }
 }
