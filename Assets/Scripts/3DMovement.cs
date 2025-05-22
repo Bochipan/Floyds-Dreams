@@ -22,8 +22,8 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(dialogue.inDialogue);
-        if (!dialogue.inDialogue) { 
+        if (!dialogue.inDialogue)
+        {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 
@@ -45,7 +45,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("Walk", isWalking);
 
 
-            Vector3 desiredForward = Vector3.RotateTowards(transform.forward, 
+            Vector3 desiredForward = Vector3.RotateTowards(transform.forward,
                     cameraRelativeMovement, turnSpeed * Time.deltaTime, 0f);
             rotation = Quaternion.LookRotation(desiredForward);
             if (isWalking == false)
@@ -53,11 +53,13 @@ public class PlayerMove : MonoBehaviour
                 rb.velocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
-            else {
+            else
+            {
                 rb.MovePosition(cameraRelativeMovement);
                 transform.Translate(cameraRelativeMovement * moveSpeed, Space.World);
                 rb.MoveRotation(rotation);
             }
         }
+        else animator.SetBool("Walk", false);
     }
 }

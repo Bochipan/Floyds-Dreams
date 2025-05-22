@@ -9,6 +9,7 @@ public class Interactable3D : MonoBehaviour
     public GameObject qmark;
     private bool contact = false;
     public string[] lines;
+    public bool isFood;
 
 
     void Update()
@@ -21,16 +22,18 @@ public class Interactable3D : MonoBehaviour
             dialogue.lines = lines;
             dialogue.StartDialogue();
         }
+        if (contact && !dialogue.inDialogue) qmark.SetActive(true);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("in");
         qmark.SetActive(true);
-        qmark.transform.position = transform.position + GetComponent<MeshRenderer>().bounds.size / 2 + new Vector3(-0.1f, 1.5f, -0.3f);
         contact = true;
 
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
+        Debug.Log("out");
         if (qmark != null) qmark.SetActive(false);
         if (dialoguebox != null) dialoguebox.SetActive(false);
 
