@@ -9,12 +9,12 @@ public class Dialogue3D : MonoBehaviour
     public GameObject qmark;
     public GameObject floyd;
     public PauseMenu pause;
-
+    public GameObject food;
     public bool inDialogue;
 
     public TextMeshProUGUI TMPro;
     public Image black;
-    public SpriteFade fade;
+    public SpriteFade3D fade;
 
     public string[] lines;
     public float speed;
@@ -70,10 +70,17 @@ public class Dialogue3D : MonoBehaviour
         }
         else
         {
+            StartCoroutine(cosa());
             gameObject.SetActive(false);
             inDialogue = false;
         }
 
+    }
+    IEnumerator cosa() {
+        fade.StartCoroutine(fade.FadeInOut());
+        yield return new WaitForSeconds(0.5f);
+        food.SetActive(false);
+        
     }
 
 }

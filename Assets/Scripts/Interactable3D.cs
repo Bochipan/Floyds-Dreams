@@ -9,6 +9,7 @@ public class Interactable3D : MonoBehaviour
     public GameObject qmark;
     private bool contact = false;
     public string[] lines;
+    public GameObject food;
     public bool isFood;
 
 
@@ -18,7 +19,7 @@ public class Interactable3D : MonoBehaviour
         {
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
-            
+            dialogue.food = food;
             dialogue.lines = lines;
             dialogue.StartDialogue();
         }

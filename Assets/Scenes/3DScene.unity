@@ -1555,6 +1555,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1001 &318794246
 PrefabInstance:
@@ -2236,6 +2237,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 494571771}
   isFood: 1
 --- !u!65 &494571777
 BoxCollider:
@@ -2275,6 +2277,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 494571771}
   isFood: 1
 --- !u!1 &506149810 stripped
 GameObject:
@@ -4141,6 +4144,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1 &1053263616
 GameObject:
@@ -5041,6 +5045,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1 &1161739263 stripped
 GameObject:
@@ -6427,6 +6432,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1001 &1474778804
 PrefabInstance:
@@ -6896,6 +6902,7 @@ MonoBehaviour:
   lines:
   - moooo
   - moooo
+  food: {fileID: 0}
   isFood: 0
 --- !u!1001 &1580652333
 PrefabInstance:
@@ -7946,7 +7953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828bfd3233ff81143a9581e7710ab09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: {fileID: 8215007715397878425}
+  fade: {fileID: 9118942800299677791}
   mat1: {fileID: 2100000, guid: 3e56423e1fe71f94ea97f5bb2004a7e6, type: 2}
   mat2: {fileID: 2100000, guid: 97637a2a763b7f24b8da4e139e4144ca, type: 2}
   light1: {fileID: 761789894}
@@ -8202,6 +8209,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1001 &1867436804
 PrefabInstance:
@@ -8348,6 +8356,7 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   lines:
   - A ham leg. I picked it up!
+  food: {fileID: 0}
   isFood: 1
 --- !u!1 &1870685166 stripped
 GameObject:
@@ -10628,7 +10637,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3546165506067248104}
   - component: {fileID: 7290637446995935206}
-  - component: {fileID: 6460262425889407650}
   - component: {fileID: 7290637446995935207}
   m_Layer: 5
   m_Name: DialogueBox
@@ -14440,36 +14448,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6460262425889407650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312219384894145589}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e1571b6fa4c2f14394d56305c0f3ce1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &6488344729692772312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14965,10 +14943,11 @@ MonoBehaviour:
   qmark: {fileID: 258975205}
   floyd: {fileID: 851254557}
   pause: {fileID: 5738989001770943886}
+  food: {fileID: 0}
   inDialogue: 0
   TMPro: {fileID: 1810518075197338842}
   black: {fileID: 2837506551835718532}
-  fade: {fileID: 8215007715397878425}
+  fade: {fileID: 9118942800299677791}
   lines: []
   speed: 0.05
   i: 0
@@ -15854,22 +15833,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -65.94855}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8215007715397878425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8742066893601805132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6a3ad53e095204c811a09f6460a91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 2837506551835718532}
-  spriteColor: {r: 0, g: 0, b: 0, a: 1}
-  Floyd: {fileID: 0}
-  sleep: {fileID: 0}
 --- !u!33 &8217396826124171108
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16535,7 +16498,7 @@ GameObject:
   - component: {fileID: 8911984186667201822}
   - component: {fileID: 9118942800299677790}
   - component: {fileID: 2837506551835718532}
-  - component: {fileID: 8215007715397878425}
+  - component: {fileID: 9118942800299677791}
   m_Layer: 0
   m_Name: black
   m_TagString: Untagged
@@ -16937,6 +16900,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8742066893601805132}
   m_CullTransparentMesh: 1
+--- !u!114 &9118942800299677791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8742066893601805132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8523860797805fc4192b655f4d79a5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2837506551835718532}
+  spriteColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &9120713056110037480
 Transform:
   m_ObjectHideFlags: 0

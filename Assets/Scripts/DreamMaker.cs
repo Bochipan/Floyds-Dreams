@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DreamMaker : MonoBehaviour
 {
-    public SpriteFade fade;
+    public SpriteFade3D fade;
     public Material mat1;
     public Material mat2;
     public Light light1;
