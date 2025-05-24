@@ -9,7 +9,7 @@ public class Dialogue3D : MonoBehaviour
     public GameObject qmark;
     public GameObject floyd;
     public PauseMenu pause;
-    public GameObject food;
+    public GameObject? food;
     public bool inDialogue;
 
     public TextMeshProUGUI TMPro;
@@ -19,6 +19,8 @@ public class Dialogue3D : MonoBehaviour
     public string[] lines;
     public float speed;
     public int i;
+    private int counter;
+    public TextMeshProUGUI counterUI;
 
     private void Start()
     {
@@ -30,8 +32,8 @@ public class Dialogue3D : MonoBehaviour
         if (Input.GetButtonDown("Interact")&& inDialogue && !GameManager.Instance.paused) {
 
             if (TMPro.text == lines[i]) NextLine();
-            else { 
-                StopAllCoroutines(); 
+            else {
+                StopAllCoroutines();
                 TMPro.text = lines[i];
             }
         }
@@ -48,14 +50,16 @@ public class Dialogue3D : MonoBehaviour
         i = 0;
         
         StartCoroutine(TypeLine());
+        
     }
 
     IEnumerator TypeLine() {
- 
+        
         foreach (char c in lines[i].ToCharArray()) {
-            
-                TMPro.text += c;
-                yield return new WaitForSeconds(speed);
+             
+             TMPro.text += c;
+             yield return new WaitForSeconds(speed);
+           
         }
     }
 
@@ -70,17 +74,16 @@ public class Dialogue3D : MonoBehaviour
         }
         else
         {
-            StartCoroutine(cosa());
+            if (food != null)
+            {
+                food.SetActive(false);
+                counter++;
+                counterUI.text = counter + "/6";
+            }
             gameObject.SetActive(false);
             inDialogue = false;
         }
 
-    }
-    IEnumerator cosa() {
-        fade.StartCoroutine(fade.FadeInOut());
-        yield return new WaitForSeconds(0.5f);
-        food.SetActive(false);
-        
     }
 
 }

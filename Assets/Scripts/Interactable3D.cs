@@ -9,7 +9,7 @@ public class Interactable3D : MonoBehaviour
     public GameObject qmark;
     private bool contact = false;
     public string[] lines;
-    public GameObject food;
+    public GameObject? food;
     public bool isFood;
 
 
@@ -19,24 +19,21 @@ public class Interactable3D : MonoBehaviour
         {
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
-            dialogue.food = food;
+            if (food !=null )dialogue.food = food;
             dialogue.lines = lines;
             dialogue.StartDialogue();
         }
-        if (contact && !dialogue.inDialogue) qmark.SetActive(true);
+        else if (contact && !dialogue.inDialogue) qmark.SetActive(true);
     }
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("in");
         qmark.SetActive(true);
         contact = true;
 
     }
     private void OnTriggerExit(Collider collision)
     {
-        Debug.Log("out");
         if (qmark != null) qmark.SetActive(false);
-        if (dialoguebox != null) dialoguebox.SetActive(false);
 
         contact = false;
         dialogue.i = 0;

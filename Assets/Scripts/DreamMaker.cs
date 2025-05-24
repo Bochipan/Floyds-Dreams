@@ -13,6 +13,7 @@ public class DreamMaker : MonoBehaviour
     public GameObject dream1;
     public GameObject dream2;
     public GameObject floyd;
+    public GameObject counter;
 
     void Start()
     {
@@ -33,9 +34,10 @@ public class DreamMaker : MonoBehaviour
         {
             floyd.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         }
-        if (!GameManager.Instance.choices[3])
+        if (GameManager.Instance.choices[3])
         {
             dream1.SetActive(true);
+            counter.SetActive(true);
         }
         else {
             dream2.SetActive(true);

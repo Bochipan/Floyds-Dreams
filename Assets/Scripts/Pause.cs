@@ -21,6 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("escaped");
             TaskOnClick();
         }
     }
@@ -28,12 +29,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (pauseMenu != null)
         {
-            if (GameManager.Instance.paused) { Pause(); }
-            else { Resume();}
+            
+            if (!GameManager.Instance.paused) Pause();
+            else Resume();
         }
     }
     public void Pause()
     {
+        
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameManager.Instance.paused = true;
