@@ -34,7 +34,7 @@ public class DreamMaker : MonoBehaviour
         {
             floyd.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         }
-        if (GameManager.Instance.choices[3])
+        if (!GameManager.Instance.choices[3])
         {
             dream1.SetActive(true);
             counter.SetActive(true);
