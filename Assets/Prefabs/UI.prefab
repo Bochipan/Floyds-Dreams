@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 207.9765}
+  m_AnchoredPosition: {x: 0, y: 203}
   m_SizeDelta: {x: 285, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7290637446611152031
@@ -452,6 +452,8 @@ MonoBehaviour:
   floydPort: {fileID: 9037747911742125094}
   kalenPort: {fileID: 941807508322393857}
   floyd: {fileID: 0}
+  stranger: {fileID: 0}
+  kalen: {fileID: 0}
   pause: {fileID: 5738989001115637495}
   inDialogue: 0
   KalenDone: 0
@@ -494,10 +496,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8911984186278225511}
   - {fileID: 7678100040465788877}
   - {fileID: 3546165506988892305}
   - {fileID: 8193633711393911069}
+  - {fileID: 8911984186278225511}
   m_Father: {fileID: 6416961975469974865}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1804,7 +1806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 89.01886, y: -93.492004}
+  m_AnchoredPosition: {x: 89.01886, y: -86}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6861166641846678983

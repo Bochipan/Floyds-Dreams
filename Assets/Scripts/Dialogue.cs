@@ -151,14 +151,17 @@ public class Dialogue : MonoBehaviour
         }
 
     }
-
+    public IEnumerator startDream() {
+        fade.StartCoroutine(fade.FadeTo(1f, 0.5f));
+        yield return new WaitForSeconds(1.5f);
+        pause.StartDream();
+    }
     public void AnswerYes()
     {   
         if (GameManager.Instance.currentChoice == -1) 
         {
-            fade.StartCoroutine(fade.FadeTo(1f, 0.5f));
-            pause.StartDream();
 
+            StartCoroutine(startDream());
         }
         else 
         {

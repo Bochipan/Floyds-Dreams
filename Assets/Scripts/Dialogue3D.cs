@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class Dialogue3D : MonoBehaviour
 {  
@@ -10,6 +11,7 @@ public class Dialogue3D : MonoBehaviour
     public GameObject floyd;
     public PauseMenu pause;
     public GameObject? food;
+    public ParticleSystem? foodParticles;
     public bool inDialogue;
 
     public TextMeshProUGUI TMPro;
@@ -75,10 +77,12 @@ public class Dialogue3D : MonoBehaviour
         else
         {
             if (food != null)
-            {
+
+            {   foodParticles.Play();
                 food.SetActive(false);
                 counter++;
                 counterUI.text = counter + "/6";
+                
             }
             gameObject.SetActive(false);
             inDialogue = false;

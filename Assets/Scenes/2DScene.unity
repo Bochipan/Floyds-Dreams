@@ -3083,14 +3083,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 1312219383934621516, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3546165506988892305, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 203
-      objectReference: {fileID: 0}
     - target: {fileID: 5256666257523712462, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: final
       value: 
@@ -3151,10 +3143,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7678100040465788877, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -86
-      objectReference: {fileID: 0}
     - target: {fileID: 8215007714440581600, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: Floyd
       value: 
@@ -3163,10 +3151,6 @@ PrefabInstance:
       propertyPath: sleep
       value: 
       objectReference: {fileID: 553529119}
-    - target: {fileID: 8346586565501311372, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

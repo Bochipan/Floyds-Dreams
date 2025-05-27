@@ -10,6 +10,7 @@ public class Interactable3D : MonoBehaviour
     private bool contact = false;
     public string[] lines;
     public GameObject? food;
+    public ParticleSystem? foodParticles;
     public bool isFood;
 
 
@@ -20,6 +21,7 @@ public class Interactable3D : MonoBehaviour
             dialoguebox.SetActive(true);
             qmark.SetActive(false);
             if (food !=null )dialogue.food = food;
+            if (foodParticles != null) dialogue.foodParticles = foodParticles;
             dialogue.lines = lines;
             dialogue.StartDialogue();
         }
