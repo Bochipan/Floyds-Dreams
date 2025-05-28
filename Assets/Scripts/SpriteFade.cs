@@ -14,6 +14,7 @@ public class SpriteFade : MonoBehaviour
     {
         spriteRenderer = GetComponent<Image>();
         spriteColor = spriteRenderer.color;
+        //StartCoroutine(FadeTo(0f, 5f));
     }
 
     public void Fade() {

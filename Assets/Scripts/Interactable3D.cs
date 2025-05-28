@@ -14,6 +14,7 @@ public class Interactable3D : MonoBehaviour
     public bool isFood;
 
 
+
     void Update()
     {
         if (contact && Input.GetButtonDown("Interact") && !dialogue.inDialogue && !GameManager.Instance.paused)
@@ -41,4 +42,5 @@ public class Interactable3D : MonoBehaviour
         dialogue.i = 0;
         dialogue.inDialogue = false;
     }
+
 }
