@@ -891,7 +891,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 999d2eb66697ddd47b65bb3762a8230e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4c7934b5c26a9de4f886f1bbe126cd65, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: -7511558181221131132, guid: 999d2eb66697ddd47b65bb3762a8230e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -1462,6 +1462,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dba56d823f8992c4b98588089cbcb76f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: dba56d823f8992c4b98588089cbcb76f, type: 3}
       propertyPath: m_Name
       value: food_ingredient_tomato
@@ -1602,7 +1606,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2f697fb9a61bd0a4093edf4e1bb0e1cd, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Name
       value: Chicken (1)
@@ -2378,6 +2382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95af36a7a64937249971bee3f97de3ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: 95af36a7a64937249971bee3f97de3ea, type: 3}
       propertyPath: m_Name
       value: food_ingredient_ham
@@ -2588,7 +2596,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1f9145dbddb3ca74493f812a2feb3276, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 638d18f691b03d142ac52016e186fa22, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f9145dbddb3ca74493f812a2feb3276, type: 3}
       propertyPath: m_Name
       value: Sheep
@@ -2920,7 +2928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &668064777
 Transform:
   m_ObjectHideFlags: 0
@@ -3219,6 +3227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761789895}
   - component: {fileID: 761789894}
+  - component: {fileID: 761789896}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3303,6 +3312,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 51.657, y: -174.673, z: -164.823}
+--- !u!114 &761789896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761789893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &764315637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,7 +3959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &951321823
 Transform:
   m_ObjectHideFlags: 0
@@ -4476,6 +4508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5fa85e944351fd740a33ff758dda5776, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fa85e944351fd740a33ff758dda5776, type: 3}
       propertyPath: m_Name
       value: food_ingredient_cheese
@@ -4872,7 +4908,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2f697fb9a61bd0a4093edf4e1bb0e1cd, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Name
       value: Chicken
@@ -5279,6 +5315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126552993}
   - component: {fileID: 1126552992}
+  - component: {fileID: 1126552994}
   m_Layer: 0
   m_Name: Directional Light (1)
   m_TagString: Untagged
@@ -5363,6 +5400,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 33.087, y: 31.08, z: 11.083}
+--- !u!114 &1126552994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126552991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1159640797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5415,6 +5475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dba56d823f8992c4b98588089cbcb76f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: dba56d823f8992c4b98588089cbcb76f, type: 3}
       propertyPath: m_Name
       value: food_ingredient_tomato (1)
@@ -7044,6 +7108,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c1453ea43028ce042b9c0eafe9d53072, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: c1453ea43028ce042b9c0eafe9d53072, type: 3}
       propertyPath: m_Name
       value: food_ingredient_lettuce
@@ -7999,7 +8067,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6d31b2e6d46042a4182ab09b4511a496, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ee6df7f67bafe2a44a17fe1f836bc8dc, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 6d31b2e6d46042a4182ab09b4511a496, type: 3}
       propertyPath: m_Name
       value: Pig
@@ -8215,7 +8283,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1f9145dbddb3ca74493f812a2feb3276, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 638d18f691b03d142ac52016e186fa22, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f9145dbddb3ca74493f812a2feb3276, type: 3}
       propertyPath: m_Name
       value: Sheep (1)
@@ -8356,7 +8424,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2f697fb9a61bd0a4093edf4e1bb0e1cd, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 686d4db8505678e4f89f54ac901a0652, type: 3}
       propertyPath: m_Name
       value: Chicken (2)
@@ -9057,6 +9125,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f29d28cdb92906543a5a8fdf7d8f77f0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: f29d28cdb92906543a5a8fdf7d8f77f0, type: 3}
       propertyPath: m_Name
       value: food_ingredient_tomato_slices
@@ -9205,6 +9277,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b65407a43cad11649b1b009c3cc34e70, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
     - target: {fileID: 919132149155446097, guid: b65407a43cad11649b1b009c3cc34e70, type: 3}
       propertyPath: m_Name
       value: food_ingredient_potato
@@ -9446,7 +9522,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 371b4b874766153438c671fa2f467757, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 638d18f691b03d142ac52016e186fa22, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 371b4b874766153438c671fa2f467757, type: 3}
       propertyPath: m_Name
       value: Cow
@@ -10316,7 +10392,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 999d2eb66697ddd47b65bb3762a8230e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4c7934b5c26a9de4f886f1bbe126cd65, type: 2}
+      objectReference: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
     - target: {fileID: -7511558181221131132, guid: 999d2eb66697ddd47b65bb3762a8230e, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -14892,6 +14968,10 @@ PrefabInstance:
       propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6472555767886602726, guid: 458e05f9d713719409dab900dfc8ce64, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 699203a486b5f234b803b631060d7e78, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
