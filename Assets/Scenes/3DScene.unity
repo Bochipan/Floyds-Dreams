@@ -2198,7 +2198,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 442955864}
-  - component: {fileID: 442955867}
   - component: {fileID: 442955866}
   - component: {fileID: 442955865}
   m_Layer: 0
@@ -2271,48 +2270,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.1505852, y: 5.5961237, z: 2.2328377}
   m_Center: {x: 1.0752926, y: 2.2980618, z: 0.61641884}
---- !u!23 &442955867
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442955863}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &453932256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59d775a75b78493418397f0e5fec5aeb, type: 3}
@@ -3959,7 +3916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &951321823
 Transform:
   m_ObjectHideFlags: 0
@@ -7922,8 +7879,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.03, y: 0.07, z: 0.02}
-  m_Center: {x: -2.435933e-10, y: 0.042478915, z: -0.0024460927}
+  m_Size: {x: 0.027124958, y: 0.07, z: 0.02}
+  m_Center: {x: 0.001437521, y: 0.042478908, z: -0.0024460922}
 --- !u!23 &1590149509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8970,6 +8927,9 @@ MonoBehaviour:
   dream2: {fileID: 951321822}
   floyd: {fileID: 851254557}
   counter: {fileID: 2142931755}
+  halftone: {fileID: 2100000, guid: c7bf6e9842c9a0044bfdb6193586cf3d, type: 2}
+  halftone1: {fileID: 2100000, guid: 699203a486b5f234b803b631060d7e78, type: 2}
+  restaurant: {fileID: 2100000, guid: fe3785cae4ccf024592fa00f0fd7f629, type: 2}
 --- !u!4 &1838736482
 Transform:
   m_ObjectHideFlags: 0
@@ -16677,8 +16637,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.029999996, y: 0.013415738, z: 0.02}
-  m_Center: {x: 0.014234278, y: 0.0015771593, z: -0.001454396}
+  m_Size: {x: 0.029999996, y: 0.0063116173, z: 0.0078105484}
+  m_Center: {x: 0.014234278, y: 0.00012319392, z: 0.0009413046}
 --- !u!23 &7926798255252546504
 MeshRenderer:
   m_ObjectHideFlags: 0
