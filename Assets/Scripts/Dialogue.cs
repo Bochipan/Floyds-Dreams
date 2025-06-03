@@ -23,6 +23,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI TMPro;
     public Image black;
     public SpriteFade fade;
+    public SpriteFade fade2;
     public GameObject final;
 
     public string[] lines;
@@ -138,7 +139,7 @@ public class Dialogue : MonoBehaviour
             
             if (black.color.a == 1f)
             {
-                fade.StartCoroutine(fade.FadeTo(0f, 0.5f));
+                fade2.StartCoroutine(fade2.FadeTo(0f, 0.5f));
                 final.SetActive(false);
             }
             if (!floyd.activeSelf) {

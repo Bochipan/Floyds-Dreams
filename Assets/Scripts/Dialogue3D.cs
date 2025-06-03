@@ -10,8 +10,10 @@ public class Dialogue3D : MonoBehaviour
     public GameObject qmark;
     public GameObject floyd;
     public PauseMenu pause;
+#nullable enable
     public GameObject? food;
     public ParticleSystem? foodParticles;
+#nullable disable
     public bool inDialogue;
 
     public TextMeshProUGUI TMPro;

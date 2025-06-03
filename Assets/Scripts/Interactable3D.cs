@@ -9,8 +9,10 @@ public class Interactable3D : MonoBehaviour
     public GameObject qmark;
     private bool contact = false;
     public string[] lines;
+#nullable enable
     public GameObject? food;
     public ParticleSystem? foodParticles;
+#nullable disable
     public bool isFood;
 
 

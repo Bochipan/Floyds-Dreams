@@ -10,6 +10,7 @@ public class Floyd : MonoBehaviour
     public GameObject principio;
     public Dialogue dialogue;
     public SpriteFade fade;
+    public SpriteFade fade2;
 
     public Collider2D[] puertas;
     public GameObject[] tp;
@@ -34,6 +35,8 @@ public class Floyd : MonoBehaviour
 
     void Start()
     {
+
+        fade.StartCoroutine(fade.FadeTo(0.5f, 5f));
         dialoguebox.SetActive(true);
 
         dialogue.lines = wakeUpLines;
@@ -60,7 +63,7 @@ public class Floyd : MonoBehaviour
         if (collision.name == "Final")
         {
 
-            fade.StartCoroutine(fade.FadeTo(1f, 0.5f));
+            fade2.StartCoroutine(fade2.FadeTo(1f, 0.5f));
 
             yield return new WaitForSeconds(0.5f);
 
