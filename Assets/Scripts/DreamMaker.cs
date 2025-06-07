@@ -10,13 +10,16 @@ public class DreamMaker : MonoBehaviour
     public Material mat2;   
     public Material halftone;
     public Material halftone1;
+    public Material halftone2;
     public Material restaurant;
+    
     public Light light1;
     public Light light2;
 
     public GameObject dream1;
     public GameObject dream2;
     public GameObject floyd;
+    public GameObject kalen;
     public GameObject counter;
     public GameObject dialoguebox;
     public Dialogue3D dialogue;
@@ -37,6 +40,7 @@ public class DreamMaker : MonoBehaviour
             light2.color = new Color(1f, 0.662f, 0.486f);
             halftone.SetColor("_BaseColor", new Color(1f, 1f, 1f));
             halftone1.SetColor("_BaseColor", new Color(1f, 1f, 1f));
+            halftone2.SetColor("_BaseColor", new Color(1f, 1f, 1f));
             restaurant.SetColor("_BaseColor", new Color(1f, 1f, 1f));
 
         }
@@ -46,13 +50,14 @@ public class DreamMaker : MonoBehaviour
             light2.color = new Color(0.434f, 0.227f, 0.428f);
             halftone.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
             halftone1.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
+            halftone2.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
             restaurant.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
         }
         if (GameManager.Instance.choices[1]) //Si true, aparece Kalen. Si false, no aparece.
         {
-           
+           kalen.SetActive(true);
         }
-        if (!GameManager.Instance.choices[2]) //Si true, Floyd es pequeñita. Si false, Floyd es tamaño normal.
+        if (GameManager.Instance.choices[2]) //Si true, Floyd es pequeñita. Si false, Floyd es tamaño normal.
         {
             floyd.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             floyd.GetComponent<Animator>().speed = 1.43f;
