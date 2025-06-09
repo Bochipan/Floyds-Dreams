@@ -63,7 +63,7 @@ public class DreamMaker : MonoBehaviour
             floyd.GetComponent<Animator>().speed = 1.43f;
             lines = new string[] { "Wow, I'm so small!" };
         }
-        if (GameManager.Instance.choices[3]) //Si true, se activa el sueño de buses. Si false, se activa el sueño del restaurante.
+        if (!GameManager.Instance.choices[3]) //Si true, se activa el sueño de buses. Si false, se activa el sueño del restaurante.
         {
             dream1.SetActive(true);
             counter.SetActive(true);

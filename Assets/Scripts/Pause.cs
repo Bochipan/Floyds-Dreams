@@ -11,8 +11,6 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        Button btn = pauseButton.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
         Resume();
 
     }
@@ -21,12 +19,12 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("escaped");
             TaskOnClick();
         }
     }
     void TaskOnClick()
     {
+        Debug.Log("click");
         if (pauseMenu != null)
         {
             
@@ -36,20 +34,24 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        
+        Debug.Log("Paused");
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameManager.Instance.paused = true;
+        Cursor.lockState = CursorLockMode.None;
 
     }
     public void Resume()
     {
+        Debug.Log("Resume");
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         GameManager.Instance.paused = false;
+        if(SceneManager.GetActiveScene().name == ("3DScene")) Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Exit() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main Menu");
     }
     public void StartDream() {

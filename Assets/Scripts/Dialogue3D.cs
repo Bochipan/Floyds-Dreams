@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 public class Dialogue3D : MonoBehaviour
 {  
     public GameObject qmark;
+    public GameObject arrow;
     public GameObject floyd;
     public PauseMenu pause;
 #nullable enable
@@ -34,11 +35,12 @@ public class Dialogue3D : MonoBehaviour
     {
 
         if (Input.GetButtonDown("Interact")&& inDialogue && !GameManager.Instance.paused) {
-
+            arrow.SetActive(false);
             if (TMPro.text == lines[i]) NextLine();
             else {
                 StopAllCoroutines();
                 TMPro.text = lines[i];
+                arrow.SetActive(true);
             }
         }
     }       
@@ -65,6 +67,7 @@ public class Dialogue3D : MonoBehaviour
              yield return new WaitForSeconds(speed);
            
         }
+        arrow.SetActive(true);
     }
 
     void NextLine()

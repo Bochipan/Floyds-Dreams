@@ -41,6 +41,8 @@ public class Floyd : MonoBehaviour
 
         dialogue.lines = wakeUpLines;
         dialogue.StartDialogue();
+        GameManager.Instance.choices = new bool[5];
+        GameManager.Instance.currentChoice = 0;
     }
 
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
