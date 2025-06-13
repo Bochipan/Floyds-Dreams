@@ -143,7 +143,7 @@ public class Dialogue : MonoBehaviour
                 final.SetActive(false);
             }
             if (!floyd.activeSelf) {
-
+                fade.StopAllCoroutines();
                 fade.Fade();
                 
             }
