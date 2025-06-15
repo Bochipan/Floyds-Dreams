@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+
 public class Dialogue : MonoBehaviour
 {  
     public GameObject qmark;
@@ -15,6 +16,7 @@ public class Dialogue : MonoBehaviour
     public GameObject stranger;
     public GameObject kalen;
     public PauseMenu pause;
+    public GameObject arrow;
 
     public bool inDialogue;
     private bool isKalen, isStranger;
@@ -25,6 +27,9 @@ public class Dialogue : MonoBehaviour
     public SpriteFade fade;
     public SpriteFade fade2;
     public GameObject final;
+
+    public AudioClip[] blips;
+    public AudioSource source;
 
     public string[] lines;
     public float speed;
@@ -54,7 +59,7 @@ public class Dialogue : MonoBehaviour
 
 
         if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf && !GameManager.Instance.paused) {
-
+            arrow.SetActive(false);
             if (lines[i][lines[i].Length - 1] == '&')
             {
                 buttonYES.SetActive(true);
@@ -70,10 +75,10 @@ public class Dialogue : MonoBehaviour
 
             else{
                 
-                StopAllCoroutines();
-                 
+                StopAllCoroutines(); 
                 TMPro.text = lines[i].Trim('&', '*','+');
-                
+                arrow.SetActive(true);
+
             }
         }       
     }
@@ -112,9 +117,14 @@ public class Dialogue : MonoBehaviour
             else { 
 
                 TMPro.text += c;
+                int n = Random.Range(0,2);
+                AudioClip blip = blips[n];
+                source.clip = blip;
+                source.Play();
                 yield return new WaitForSeconds(speed);
             }
         }
+        arrow.SetActive(true);
     }
 
     void NextLine()
@@ -144,7 +154,7 @@ public class Dialogue : MonoBehaviour
             }
             if (!floyd.activeSelf) {
                 fade.StopAllCoroutines();
-                fade.Fade();
+                fade.StartCoroutine(fade.FadeInOutLong());
                 
             }
             gameObject.SetActive(false);

@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
     }
     void TaskOnClick()
     {
-        Debug.Log("click");
+
         if (pauseMenu != null)
         {
             
@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        Debug.Log("Paused");
+
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameManager.Instance.paused = true;
@@ -43,7 +43,6 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
-        Debug.Log("Resume");
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         GameManager.Instance.paused = false;

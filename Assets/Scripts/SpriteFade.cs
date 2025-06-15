@@ -19,7 +19,7 @@ public class SpriteFade : MonoBehaviour
 
     public void Fade() {
         StartCoroutine(FadeInOut());
-        if (!Floyd.gameObject.activeSelf) StartCoroutine(wakeFloyd());
+        
     }
 
     public IEnumerator FadeInOut()
@@ -32,7 +32,17 @@ public class SpriteFade : MonoBehaviour
 
         Floyd.inTransition = false;
     }
+    public IEnumerator FadeInOutLong()
+    {
+        if (!Floyd.gameObject.activeSelf) StartCoroutine(wakeFloyd());
+        yield return StartCoroutine(FadeTo(1f, 0.5f));
 
+        yield return new WaitForSeconds(2f);
+
+        yield return StartCoroutine(FadeTo(0f, 0.5f));
+
+        Floyd.inTransition = false;
+    }
     public IEnumerator FadeTo(float targetAlpha, float duration)
     {
         float startAlpha = spriteColor.a;

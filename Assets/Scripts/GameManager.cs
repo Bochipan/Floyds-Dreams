@@ -25,5 +25,6 @@ public class GameManager : MonoBehaviour
         public int currentChoice = 0;
         public bool[] choices = new bool[5];
         public bool paused = false;
+        public bool sound = true;   
 
 }
