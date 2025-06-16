@@ -37,7 +37,7 @@ public class Floyd : MonoBehaviour
     void Start()
     {
 
-        fade.StartCoroutine(fade.FadeTo(0.5f, 5f));
+        //fade.StartCoroutine(fade.FadeTo(0.5f, 5f));
         dialoguebox.SetActive(true);
 
         dialogue.lines = wakeUpLines;

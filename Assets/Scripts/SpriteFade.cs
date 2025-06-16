@@ -15,6 +15,7 @@ public class SpriteFade : MonoBehaviour
         spriteRenderer = GetComponent<Image>();
         spriteColor = spriteRenderer.color;
         StartCoroutine(FadeTo(0f, 2f));
+        
     }
 
     public void Fade() {
@@ -45,6 +46,7 @@ public class SpriteFade : MonoBehaviour
     }
     public IEnumerator FadeTo(float targetAlpha, float duration)
     {
+        Debug.Log("Empieza");
         float startAlpha = spriteColor.a;
         float time = 0;
 
@@ -60,6 +62,7 @@ public class SpriteFade : MonoBehaviour
        
         spriteColor.a = targetAlpha;
         spriteRenderer.color = spriteColor;
+        Debug.Log("Acaba");
     }
     public IEnumerator wakeFloyd()
     {

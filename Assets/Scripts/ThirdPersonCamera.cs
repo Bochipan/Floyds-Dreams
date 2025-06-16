@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
 
-    private const float YMin = -10.0f;
+    private const float YMin = 0.0f;
     private const float YMax = 30.0f;
 
     public Transform lookAt;

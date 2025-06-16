@@ -4097,7 +4097,7 @@ MonoBehaviour:
   Player: {fileID: 860298506}
   distance: 10
   sensivityY: 100
-  sensivityX: 300
+  sensivityX: 100
 --- !u!114 &860298510
 MonoBehaviour:
   m_ObjectHideFlags: 0

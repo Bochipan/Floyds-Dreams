@@ -34,11 +34,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-
+        if (GameManager.Instance.paused) Resume();
+        else { 
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameManager.Instance.paused = true;
         Cursor.lockState = CursorLockMode.None;
+        }
 
     }
     public void Resume()

@@ -194,8 +194,7 @@ public class Dialogue : MonoBehaviour
             buttonNO.SetActive(false);
             if (GameManager.Instance.currentChoice == 4) kalen.SetActive(false);
             if (GameManager.Instance.currentChoice == 3) {
-                StartCoroutine(strangerOut());
-                
+                StartCoroutine(strangerOut()); 
             }
             else NextLine();
         }

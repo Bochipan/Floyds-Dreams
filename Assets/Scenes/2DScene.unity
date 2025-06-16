@@ -4505,6 +4505,10 @@ PrefabInstance:
       propertyPath: m_Maskable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3374463649154172629, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272949868374553781, guid: eea72d70f59d20b45b8d7fd45f6070fa, type: 3}
       propertyPath: m_fontColor.b
       value: 0.54901963
