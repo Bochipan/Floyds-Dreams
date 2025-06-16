@@ -66,6 +66,7 @@ public class SpriteFade : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Floyd.gameObject.SetActive(true);
         sleep.SetActive(false);
+        if (GameManager.Instance.sound) Floyd.GetComponent<AudioSource>().Play();
 
     }
 

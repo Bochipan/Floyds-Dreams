@@ -117,10 +117,15 @@ public class Dialogue : MonoBehaviour
             else { 
 
                 TMPro.text += c;
-                int n = Random.Range(0,2);
-                AudioClip blip = blips[n];
-                source.clip = blip;
-                source.Play();
+
+                if (GameManager.Instance.sound) {
+                    int n = Random.Range(0, 3);
+                    AudioClip blip = blips[n];
+                    source.clip = blip;
+                    source.Play();
+                }
+                
+
                 yield return new WaitForSeconds(speed);
             }
         }
@@ -167,6 +172,12 @@ public class Dialogue : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         pause.StartDream();
     }
+    public IEnumerator strangerOut()
+    {
+        fade.Fade();
+        yield return new WaitForSeconds(0.5f);
+        stranger.SetActive(false);
+    }
     public void AnswerYes()
     {   
         if (GameManager.Instance.currentChoice == -1) 
@@ -183,8 +194,8 @@ public class Dialogue : MonoBehaviour
             buttonNO.SetActive(false);
             if (GameManager.Instance.currentChoice == 4) kalen.SetActive(false);
             if (GameManager.Instance.currentChoice == 3) {
-                fade.Fade();
-                stranger.SetActive(false); 
+                StartCoroutine(strangerOut());
+                
             }
             else NextLine();
         }
@@ -192,7 +203,7 @@ public class Dialogue : MonoBehaviour
     public void AnswerNo()
     {
         if (!(GameManager.Instance.currentChoice == -1)) GameManager.Instance.choices[GameManager.Instance.currentChoice] = false;
-        if (GameManager.Instance.currentChoice == 4) kalen.SetActive(false);
+        if (GameManager.Instance.currentChoice == 4) kalen.GetComponent<PolygonCollider2D>().enabled = false;
         buttonYES.SetActive(false);
         buttonNO.SetActive(false);
         NextLine();

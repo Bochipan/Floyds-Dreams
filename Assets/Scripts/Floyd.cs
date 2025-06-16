@@ -16,7 +16,8 @@ public class Floyd : MonoBehaviour
     public GameObject[] tp;
     public GameObject[] rooms;
 
-   
+    public AudioSource source;
+    public AudioClip[] clips;
     
 
     public Light light1;
@@ -47,19 +48,42 @@ public class Floyd : MonoBehaviour
 
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
-
+      
+        if (collision.gameObject.name == "Puerta4" || collision.gameObject.name == "Puerta5" && GameManager.Instance.sound)
+        {
+            source.clip = clips[0];
+            source.Play();
+        }
 
         if (longPortals.Any(collision.name.Contains))
         {
+            if (collision.gameObject.name == "Puerta6" || collision.gameObject.name == "Puerta8" && GameManager.Instance.sound)
+            {
+                source.clip = clips[1];
+                source.Play();
+            }
 
             fade.Fade();
             inTransition = true;
             yield return new WaitForSeconds(0.5f);
 
-            if (collision.gameObject.name == "Puerta7")
+            if (collision.gameObject.name == "Puerta7" || collision.gameObject.name == "Puerta9")
             {
                 GameManager.Instance.choices[2] = true;
+                if (GameManager.Instance.sound)
+                {
+                    source.clip = clips[2];
+                    source.Play();
+                }
             }
+
+            if (collision.gameObject.name == "Puerta10" || collision.gameObject.name == "Puerta11" && GameManager.Instance.sound)
+            {
+                source.clip = clips[0];
+                source.Play();
+            }
+
+
         }
 
         if (collision.name == "Final")

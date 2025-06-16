@@ -10,6 +10,7 @@ public class Dialogue3D : MonoBehaviour
     public GameObject qmark;
     public GameObject arrow;
     public GameObject floyd;
+    public GameObject door;
     public PauseMenu pause;
 #nullable enable
     public GameObject? food;
@@ -26,6 +27,10 @@ public class Dialogue3D : MonoBehaviour
     public int i;
     private int counter;
     public TextMeshProUGUI counterUI;
+    public AudioSource source;
+
+    public AudioClip[] blips;
+    public AudioSource sourceBlips;
 
     private void Start()
     {
@@ -34,7 +39,7 @@ public class Dialogue3D : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Interact")&& inDialogue && !GameManager.Instance.paused) {
+        if (Input.GetButtonDown("Interact") && inDialogue && !GameManager.Instance.paused) {
             arrow.SetActive(false);
             if (TMPro.text == lines[i]) NextLine();
             else {
@@ -63,8 +68,15 @@ public class Dialogue3D : MonoBehaviour
         
         foreach (char c in lines[i].ToCharArray()) {
              
-             TMPro.text += c;
-             yield return new WaitForSeconds(speed);
+            TMPro.text += c;
+            if (GameManager.Instance.sound)
+            {
+                int n = Random.Range(0, 3);
+                AudioClip blip = blips[n];
+                sourceBlips.clip = blip;
+                sourceBlips.Play();
+            }
+            yield return new WaitForSeconds(speed);
            
         }
         arrow.SetActive(true);
@@ -84,9 +96,12 @@ public class Dialogue3D : MonoBehaviour
             if (food != null)
 
             {   foodParticles.Play();
+                if (GameManager.Instance.sound) source.Play();
                 food.SetActive(false);
                 counter++;
                 counterUI.text = counter + "/6";
+                food = null;
+                if (counter == 6) door.SetActive(true);
                 
             }
             gameObject.SetActive(false);

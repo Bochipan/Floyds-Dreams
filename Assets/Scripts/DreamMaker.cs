@@ -53,7 +53,7 @@ public class DreamMaker : MonoBehaviour
             halftone2.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
             restaurant.SetColor("_BaseColor", new Color(0.59f, 0.60f, 1f));
         }
-        if (!GameManager.Instance.choices[1]) //Si true, aparece Kalen. Si false, no aparece.
+        if (GameManager.Instance.choices[1]) //Si true, aparece Kalen. Si false, no aparece.
         {
            kalen.SetActive(true);
         }

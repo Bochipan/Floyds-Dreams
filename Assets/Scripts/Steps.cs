@@ -15,9 +15,12 @@ public class Steps : MonoBehaviour
     // Update is called once per frame
     public void Step()
     {
-        int n = Random.Range(0, 2);
-        AudioClip step = steps[n];
-        source.clip = step;
-        source.Play();
+        if (GameManager.Instance.sound)
+        {
+            int n = Random.Range(0, 3);
+            AudioClip step = steps[n];
+            source.clip = step;
+            source.Play();
+        }
     }
 }
