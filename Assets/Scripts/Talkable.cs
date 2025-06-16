@@ -25,7 +25,7 @@ public class Talkable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!(isKalen && dialogue.KalenDone) && !(dialogue.eventDone)) bubble.SetActive(true);
+        bubble.SetActive(true);
         bubble.transform.position = transform.position + GetComponent<SpriteRenderer>().bounds.size /2 + new Vector3 (-0.1f, 1f, -0.3f);
         contact = true;
         

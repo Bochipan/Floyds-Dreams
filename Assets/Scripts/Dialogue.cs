@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
     public GameObject arrow;
 
     public bool inDialogue;
+    public bool inCutscene;
     private bool isKalen, isStranger;
     public bool KalenDone, eventDone;
 
@@ -58,7 +59,7 @@ public class Dialogue : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf && !GameManager.Instance.paused) {
+        if (Input.GetButtonDown("Interact")&&inDialogue&&!buttonYES.activeSelf && !GameManager.Instance.paused && !inCutscene) {
             arrow.SetActive(false);
             if (lines[i][lines[i].Length - 1] == '&')
             {
@@ -138,6 +139,8 @@ public class Dialogue : MonoBehaviour
 
         if (i < lines.Length - 1)
         {
+            if (isKalen) KalenDone = true;
+            if (isStranger) eventDone = true;
             i++;
             TMPro.text = string.Empty;
             isKalen = false;
@@ -146,12 +149,13 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            if (isKalen) KalenDone = true;
-            if (isStranger) eventDone = true;
+
 
             isKalen = false;
             isStranger = false;
-            
+            if (KalenDone) kalen.GetComponent<PolygonCollider2D>().enabled = false;
+            if (eventDone) stranger.GetComponent<PolygonCollider2D>().enabled = false;
+
             if (black.color.a == 1f)
             {
                 fade2.StartCoroutine(fade2.FadeTo(0f, 0.5f));
@@ -168,15 +172,20 @@ public class Dialogue : MonoBehaviour
 
     }
     public IEnumerator startDream() {
+
         fade.StartCoroutine(fade.FadeTo(1f, 0.5f));
         yield return new WaitForSeconds(1.5f);
         pause.StartDream();
     }
     public IEnumerator strangerOut()
     {
+        inCutscene = true;
         fade.Fade();
         yield return new WaitForSeconds(0.5f);
         stranger.SetActive(false);
+        inCutscene = false;
+
+
     }
     public void AnswerYes()
     {   

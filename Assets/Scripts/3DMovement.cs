@@ -60,6 +60,10 @@ public class PlayerMove : MonoBehaviour
                 rb.MoveRotation(rotation);
             }
         }
-        else animator.SetBool("Walk", false);
+        else { 
+            animator.SetBool("Walk", false);
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 }
