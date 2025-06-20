@@ -55,8 +55,8 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                rb.MovePosition(cameraRelativeMovement);
-                transform.Translate(cameraRelativeMovement * moveSpeed, Space.World);
+                //rb.MovePosition(cameraRelativeMovement.normalized);
+                transform.Translate(cameraRelativeMovement.normalized * moveSpeed, Space.World);
                 rb.MoveRotation(rotation);
             }
         }
